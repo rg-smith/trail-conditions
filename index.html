@@ -4,7 +4,8 @@
       <th>name</th>
       <th>4-day precip + snowmelt (in)</th>
       <th>4-day avg temp (degrees F)</th>
-      <th>Probability that trail is muddy</th>
+      <th>Muddy trail (probability, current)</th>
+      <th>Muddy trail (probability, next day)</th>
     </tr>
   </thead>
   <tbody>
@@ -13,372 +14,434 @@
       <td>0.167962</td>
       <td>50.245925</td>
       <td>0.154681</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Grindstone Quarry Trail</td>
       <td>0.167962</td>
       <td>50.239458</td>
       <td>0.390241</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Timber Trail</td>
       <td>0.193326</td>
       <td>51.284012</td>
       <td>0.349439</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Foothills Trail</td>
       <td>0.209141</td>
       <td>50.925780</td>
       <td>0.244278</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Foothills Trail</td>
       <td>0.235582</td>
       <td>50.718424</td>
       <td>0.342972</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Coyote Ridge Trail</td>
       <td>0.149422</td>
       <td>51.454765</td>
       <td>0.271451</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Overland Loop</td>
       <td>0.169377</td>
       <td>50.115985</td>
       <td>0.401969</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Lake Access Trail</td>
       <td>0.207638</td>
       <td>50.664208</td>
       <td>0.254112</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Cherry Gulch Trail</td>
       <td>0.113443</td>
       <td>49.970700</td>
       <td>0.231694</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Cheyenne Rim Trail</td>
       <td>0.316169</td>
       <td>45.643380</td>
       <td>0.675126</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <td>Blue Sky Trail</td>
       <td>0.158333</td>
       <td>50.735864</td>
       <td>0.419097</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Hidden Valley Trail</td>
       <td>0.129692</td>
       <td>51.674031</td>
       <td>0.153444</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>South Ridge Trail</td>
       <td>0.195616</td>
       <td>49.788717</td>
       <td>0.285963</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Middle Longhorn Trail</td>
       <td>0.140139</td>
       <td>49.486907</td>
       <td>0.173110</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Lower Longhorn Trail</td>
       <td>0.138935</td>
       <td>49.437428</td>
       <td>0.041870</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Dalton Point Trail</td>
       <td>0.110684</td>
       <td>50.848482</td>
       <td>0.211781</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Gould Loop Trail</td>
       <td>0.553255</td>
       <td>32.784098</td>
       <td>0.533287</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Ginny Trail</td>
       <td>0.172824</td>
       <td>50.092774</td>
       <td>0.287858</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>BLM Route 5670E</td>
       <td>0.010715</td>
       <td>47.650290</td>
       <td>0.214081</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Schoolhouse Loop</td>
       <td>0.169267</td>
       <td>50.322629</td>
       <td>0.392077</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Button Rock Trail</td>
       <td>0.178668</td>
       <td>47.887701</td>
       <td>0.333007</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Cobalt Trail</td>
       <td>0.158254</td>
       <td>52.356136</td>
       <td>0.246386</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Halfway House Trail</td>
       <td>0.166082</td>
       <td>51.615160</td>
       <td>0.192081</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Halfway House Trail</td>
       <td>0.166082</td>
       <td>51.615160</td>
       <td>0.290814</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Lichen Loop</td>
       <td>0.168017</td>
       <td>50.069879</td>
       <td>0.367977</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Marshall Mesa Trail</td>
       <td>0.138948</td>
       <td>52.238269</td>
       <td>0.243036</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Nighthawk Trail</td>
       <td>0.168612</td>
       <td>49.854083</td>
       <td>0.312603</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Panorama Trail</td>
       <td>0.166082</td>
       <td>51.615160</td>
       <td>0.049650</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>South Boulder Creek Trail</td>
       <td>0.136670</td>
       <td>53.237760</td>
       <td>0.350225</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Turkey Trot Trail</td>
       <td>0.108272</td>
       <td>51.581421</td>
       <td>0.378630</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Viewpoint Trail</td>
       <td>0.164722</td>
       <td>52.059823</td>
       <td>0.120451</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Village Walk Trail</td>
       <td>0.112817</td>
       <td>50.352043</td>
       <td>0.223441</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Antelope Trail</td>
       <td>0.162392</td>
       <td>50.267627</td>
       <td>0.282789</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Bear Creek Canyon Park Trails</td>
       <td>0.100000</td>
       <td>49.010438</td>
       <td>0.763395</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <td>Belcher Hill Trail</td>
       <td>0.137132</td>
       <td>49.661911</td>
       <td>0.034264</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Bitterbrush Trail</td>
       <td>0.165783</td>
       <td>50.102304</td>
       <td>0.269010</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Castle Trail</td>
       <td>0.113512</td>
       <td>49.825007</td>
       <td>0.223075</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Eagle Wind Trail</td>
       <td>0.132362</td>
       <td>51.645678</td>
       <td>0.142845</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Foothills Trail</td>
       <td>0.216296</td>
       <td>50.815012</td>
       <td>0.659782</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <td>Gould Loop Trail</td>
       <td>0.571923</td>
       <td>31.914806</td>
       <td>0.586122</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Indian Summer Trail</td>
       <td>0.149667</td>
       <td>50.695503</td>
       <td>0.292669</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Laughing Horse Loop Trail</td>
       <td>0.137633</td>
       <td>51.571890</td>
       <td>0.264965</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Little Thompson Overlook Trail</td>
       <td>0.133240</td>
       <td>51.399307</td>
       <td>0.265101</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Upper Longhorn Trail</td>
       <td>0.143137</td>
       <td>48.600362</td>
       <td>0.288385</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Morrison Slide Trail</td>
       <td>0.113142</td>
       <td>50.048231</td>
       <td>0.048190</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Nelson Loop Trail</td>
       <td>0.171758</td>
       <td>49.213539</td>
       <td>0.458583</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Nomad Trail</td>
       <td>0.199552</td>
       <td>50.310284</td>
       <td>0.563087</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <td>Picture Rock Trail</td>
       <td>0.161146</td>
       <td>50.425406</td>
       <td>0.503311</td>
+      <td>1.0</td>
     </tr>
     <tr>
       <td>Ponderosa Loop</td>
       <td>0.167047</td>
       <td>49.645440</td>
       <td>0.341239</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Red Rocks Trail</td>
       <td>0.110986</td>
       <td>50.770951</td>
       <td>0.026762</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Rimrock Trail</td>
       <td>0.150486</td>
       <td>51.209630</td>
       <td>0.365639</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Ruins Trail</td>
       <td>0.115042</td>
       <td>49.728708</td>
       <td>0.297024</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Shorthorn Trail</td>
       <td>0.141937</td>
       <td>49.039000</td>
       <td>0.046219</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>South Ridge Trail</td>
       <td>0.193541</td>
       <td>49.951024</td>
       <td>0.238892</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Two Brands Trail</td>
       <td>0.100000</td>
       <td>53.358691</td>
       <td>0.137647</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Two Dog Trail</td>
       <td>0.111356</td>
       <td>50.165295</td>
       <td>0.028014</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Village Ride Trail</td>
       <td>0.111589</td>
       <td>50.628166</td>
       <td>0.219722</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Walker's Dream Trail</td>
       <td>0.112584</td>
       <td>49.921306</td>
       <td>0.055542</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Walden Ponds Trail</td>
       <td>0.128399</td>
       <td>52.466379</td>
       <td>0.322480</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>West Valley Trail</td>
       <td>0.218944</td>
       <td>50.511697</td>
       <td>0.385625</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Whippletree Trail</td>
       <td>0.137684</td>
       <td>49.785531</td>
       <td>0.044162</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <td>Wild Turkey Trail</td>
       <td>0.165602</td>
       <td>49.719497</td>
       <td>0.322385</td>
+      <td>0.0</td>
     </tr>
   </tbody>
 </table>
