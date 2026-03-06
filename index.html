@@ -1,4 +1,35 @@
-<table border="1" class="dataframe">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Trail Conditions Forecast</title>
+    
+    <!-- DataTables CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trail Conditions Forecast</h1>
+    
+    <table border="1" class="dataframe display" id="forecast_table">
   <thead>
     <tr style="text-align: right;">
       <th>name</th>
@@ -445,3 +476,11 @@
     </tr>
   </tbody>
 </table>
+    
+    <script>
+        $(document).ready(function() {
+            $('#forecast_table').DataTable();
+        });
+    </script>
+</body>
+</html>
