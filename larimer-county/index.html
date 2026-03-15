@@ -1,0 +1,6901 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Trail Conditions Forecast as of 2026-03-14 18:00</title>
+
+    <!-- DataTables CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- DataTables JS -->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trail Conditions Forecast as of 2026-03-14 18:00</h1>
+
+    <table border="1" class="dataframe display" id="forecast_table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>name</th>
+      <th>Park/Space</th>
+      <th>4-day precip + snowmelt (in)</th>
+      <th>4-day avg temp (degrees F)</th>
+      <th>Muddy trail (probability, current)</th>
+      <th>Muddy trail (probability, next day)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Grindstone Quarry Trail</td>
+      <td></td>
+      <td>0.029528</td>
+      <td>48.591087</td>
+      <td>0.044079</td>
+      <td>0.264730</td>
+    </tr>
+    <tr>
+      <td>Grindstone Quarry Trail</td>
+      <td></td>
+      <td>0.029528</td>
+      <td>48.591087</td>
+      <td>0.042681</td>
+      <td>0.268763</td>
+    </tr>
+    <tr>
+      <td>North Beaver Creek Trail</td>
+      <td>Gunnison SWA</td>
+      <td>0.669525</td>
+      <td>38.970774</td>
+      <td>0.598253</td>
+      <td>0.771262</td>
+    </tr>
+    <tr>
+      <td>Arkansas River Ranch Trail</td>
+      <td>Arkansas Headwaters RA - Kobe</td>
+      <td>0.352273</td>
+      <td>37.025491</td>
+      <td>0.638840</td>
+      <td>0.732184</td>
+    </tr>
+    <tr>
+      <td>Big Bend OHV Track Trail</td>
+      <td>Arkansas Headwaters RA - Big Bend (R&amp;PP Site)</td>
+      <td>0.000000</td>
+      <td>48.165464</td>
+      <td>0.051715</td>
+      <td>0.203728</td>
+    </tr>
+    <tr>
+      <td>Crags Campground Road</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>28.043609</td>
+      <td>0.438556</td>
+      <td>0.605261</td>
+    </tr>
+    <tr>
+      <td>Crystal Lake STL West Access Road</td>
+      <td>Crystal Lake STL</td>
+      <td>0.488394</td>
+      <td>35.541533</td>
+      <td>0.650726</td>
+      <td>0.739258</td>
+    </tr>
+    <tr>
+      <td>Crystal Lake Eastern Access Road</td>
+      <td>Crystal Lake STL</td>
+      <td>0.559411</td>
+      <td>35.699505</td>
+      <td>0.650726</td>
+      <td>0.739258</td>
+    </tr>
+    <tr>
+      <td>OHV Track on South Shore Trail</td>
+      <td>Jackson Lake State Park</td>
+      <td>0.000000</td>
+      <td>46.569911</td>
+      <td>0.050209</td>
+      <td>0.122500</td>
+    </tr>
+    <tr>
+      <td>Old Stagecoach Road</td>
+      <td>Arkansas Headwaters RA - BLM Site</td>
+      <td>0.332979</td>
+      <td>36.656227</td>
+      <td>0.643826</td>
+      <td>0.720961</td>
+    </tr>
+    <tr>
+      <td>Point Barr Trail</td>
+      <td>Arkansas Headwaters RA - Point Barr (R&amp;PP Site)</td>
+      <td>0.000000</td>
+      <td>48.241491</td>
+      <td>0.036674</td>
+      <td>0.113187</td>
+    </tr>
+    <tr>
+      <td>Point Barr Trail</td>
+      <td>Arkansas Headwaters RA - Point Barr (R&amp;PP Site)</td>
+      <td>0.000000</td>
+      <td>48.425010</td>
+      <td>0.036674</td>
+      <td>0.110236</td>
+    </tr>
+    <tr>
+      <td>Stone Cabin Road</td>
+      <td>Arkansas Headwaters RA - Stone Cabin</td>
+      <td>0.779470</td>
+      <td>37.725201</td>
+      <td>0.678423</td>
+      <td>0.741243</td>
+    </tr>
+    <tr>
+      <td>Stone Cabin Road</td>
+      <td>Arkansas Headwaters RA - Stone Cabin</td>
+      <td>0.779470</td>
+      <td>37.725201</td>
+      <td>0.678423</td>
+      <td>0.741243</td>
+    </tr>
+    <tr>
+      <td>Limber Pine Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.247441</td>
+      <td>38.916318</td>
+      <td>0.477989</td>
+      <td>0.721321</td>
+    </tr>
+    <tr>
+      <td>Wyoming Trail</td>
+      <td></td>
+      <td>0.668707</td>
+      <td>31.860652</td>
+      <td>0.831446</td>
+      <td>0.832699</td>
+    </tr>
+    <tr>
+      <td>Dakota Ridge Overlook Trail</td>
+      <td>Roxborough State Park</td>
+      <td>0.467607</td>
+      <td>50.044395</td>
+      <td>0.047888</td>
+      <td>0.170443</td>
+    </tr>
+    <tr>
+      <td>Wetlands Connector Trail</td>
+      <td>Chatfield State Park</td>
+      <td>0.173531</td>
+      <td>52.938426</td>
+      <td>0.027485</td>
+      <td>0.103560</td>
+    </tr>
+    <tr>
+      <td>Ridge to Ridge Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.745169</td>
+      <td>0.019907</td>
+      <td>0.213982</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Escalante SWA - Hamilton Tract</td>
+      <td>0.000000</td>
+      <td>50.512846</td>
+      <td>0.014163</td>
+      <td>0.080554</td>
+    </tr>
+    <tr>
+      <td>Whiskey Creek Trail</td>
+      <td>Whiskey Creek STL</td>
+      <td>1.925311</td>
+      <td>38.283131</td>
+      <td>0.677085</td>
+      <td>0.764451</td>
+    </tr>
+    <tr>
+      <td>Whiskey Creek Tie Trail</td>
+      <td>Whiskey Creek STL</td>
+      <td>1.457396</td>
+      <td>38.528985</td>
+      <td>0.683172</td>
+      <td>0.764451</td>
+    </tr>
+    <tr>
+      <td>BLM Route 5755</td>
+      <td>Badger Creek STL</td>
+      <td>0.184468</td>
+      <td>39.827745</td>
+      <td>0.265401</td>
+      <td>0.147763</td>
+    </tr>
+    <tr>
+      <td>Hecla Junction Trail</td>
+      <td>Arkansas Headwaters RA - Hecla Junction (R&amp;PP Site)</td>
+      <td>0.016405</td>
+      <td>46.583618</td>
+      <td>0.137433</td>
+      <td>0.126696</td>
+    </tr>
+    <tr>
+      <td>Grape Creek Trail Bike</td>
+      <td>Arkansas Headwaters RA - BLM Site</td>
+      <td>0.000000</td>
+      <td>54.670787</td>
+      <td>0.020027</td>
+      <td>0.084601</td>
+    </tr>
+    <tr>
+      <td>BLM Route 5760</td>
+      <td>Rye Slough STL</td>
+      <td>0.120146</td>
+      <td>38.106390</td>
+      <td>0.549578</td>
+      <td>0.376155</td>
+    </tr>
+    <tr>
+      <td>BLM Route 5775</td>
+      <td>Rye Slough STL</td>
+      <td>0.411803</td>
+      <td>38.669033</td>
+      <td>0.546076</td>
+      <td>0.296890</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Arkansas Headwaters RA - Fisherman Bridge (R&amp;PP Site)</td>
+      <td>0.129237</td>
+      <td>45.238675</td>
+      <td>0.179298</td>
+      <td>0.249071</td>
+    </tr>
+    <tr>
+      <td>Fistful Extension Trail</td>
+      <td>Arkansas Headwaters RA - Collegiate Peaks (R&amp;PP Site)</td>
+      <td>0.206342</td>
+      <td>44.335051</td>
+      <td>0.268872</td>
+      <td>0.268965</td>
+    </tr>
+    <tr>
+      <td>BLM Trail 6032D</td>
+      <td>Arkansas Headwaters RA - BLM Site</td>
+      <td>0.350526</td>
+      <td>43.794556</td>
+      <td>0.288752</td>
+      <td>0.298141</td>
+    </tr>
+    <tr>
+      <td>BLM Route 5755</td>
+      <td>Badger Creek STL</td>
+      <td>0.244197</td>
+      <td>39.789549</td>
+      <td>0.265401</td>
+      <td>0.147763</td>
+    </tr>
+    <tr>
+      <td>BLM Route 5790</td>
+      <td>Waugh Mountain STL</td>
+      <td>0.245532</td>
+      <td>40.793544</td>
+      <td>0.261536</td>
+      <td>0.398999</td>
+    </tr>
+    <tr>
+      <td>Hecla Junction Trail</td>
+      <td>Arkansas Headwaters RA - Hecla Junction (R&amp;PP Site)</td>
+      <td>0.016405</td>
+      <td>46.583618</td>
+      <td>0.137433</td>
+      <td>0.126696</td>
+    </tr>
+    <tr>
+      <td>Chicken Creek Trail</td>
+      <td>Mancos State Park</td>
+      <td>0.000000</td>
+      <td>43.481695</td>
+      <td>0.117504</td>
+      <td>0.129256</td>
+    </tr>
+    <tr>
+      <td>Cold Springs Mountain Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>35.665263</td>
+      <td>0.152805</td>
+      <td>0.426858</td>
+    </tr>
+    <tr>
+      <td>Cold Springs Mountain Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>36.841391</td>
+      <td>0.141736</td>
+      <td>0.425816</td>
+    </tr>
+    <tr>
+      <td>Dodo Road</td>
+      <td>Hot Creek SWA - Poso Tract</td>
+      <td>0.011024</td>
+      <td>44.784675</td>
+      <td>0.221425</td>
+      <td>0.196678</td>
+    </tr>
+    <tr>
+      <td>Yampa Valley Trail</td>
+      <td>Dobbins Spring STL</td>
+      <td>0.000000</td>
+      <td>43.780595</td>
+      <td>0.112246</td>
+      <td>0.275023</td>
+    </tr>
+    <tr>
+      <td>Public Lands Access Trail (Plat)</td>
+      <td>Stagecoach State Park</td>
+      <td>2.427850</td>
+      <td>40.769074</td>
+      <td>0.573085</td>
+      <td>0.562573</td>
+    </tr>
+    <tr>
+      <td>Cold Springs Mountain Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>37.076761</td>
+      <td>0.144605</td>
+      <td>0.420731</td>
+    </tr>
+    <tr>
+      <td>Upper Gee Flats Road</td>
+      <td>Raftopoulos Hunting Lease</td>
+      <td>0.000000</td>
+      <td>39.613855</td>
+      <td>0.140565</td>
+      <td>0.376380</td>
+    </tr>
+    <tr>
+      <td>Johnson Flats Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>35.489758</td>
+      <td>0.152805</td>
+      <td>0.434391</td>
+    </tr>
+    <tr>
+      <td>Serviceberry Road</td>
+      <td>Cedars STL</td>
+      <td>0.000000</td>
+      <td>42.835416</td>
+      <td>0.143679</td>
+      <td>0.318253</td>
+    </tr>
+    <tr>
+      <td>Yampa Valley Trail</td>
+      <td>Bitter Brush SWA</td>
+      <td>0.000000</td>
+      <td>43.979496</td>
+      <td>0.124603</td>
+      <td>0.267573</td>
+    </tr>
+    <tr>
+      <td>BLM Trail 1101</td>
+      <td>Piceance SWA - Yellow Creek Unit</td>
+      <td>0.000000</td>
+      <td>44.493265</td>
+      <td>0.104462</td>
+      <td>0.253406</td>
+    </tr>
+    <tr>
+      <td>Limestone Gap Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>39.547600</td>
+      <td>0.140565</td>
+      <td>0.366886</td>
+    </tr>
+    <tr>
+      <td>Groundhog Creek Trail</td>
+      <td>Fish Creek SWA</td>
+      <td>0.356005</td>
+      <td>38.531329</td>
+      <td>0.638650</td>
+      <td>0.565010</td>
+    </tr>
+    <tr>
+      <td>Spring Creek Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>35.473344</td>
+      <td>0.140542</td>
+      <td>0.148221</td>
+    </tr>
+    <tr>
+      <td>Fish Creek Trail</td>
+      <td>Fish Creek SWA</td>
+      <td>0.968631</td>
+      <td>36.197389</td>
+      <td>0.695361</td>
+      <td>0.577767</td>
+    </tr>
+    <tr>
+      <td>West Lime Creek Trail</td>
+      <td>West Lime Creek STL</td>
+      <td>0.000000</td>
+      <td>29.520240</td>
+      <td>0.181057</td>
+      <td>0.433029</td>
+    </tr>
+    <tr>
+      <td>Dry Fork Trail</td>
+      <td>Perins Peak SWA</td>
+      <td>0.000000</td>
+      <td>45.739494</td>
+      <td>0.118794</td>
+      <td>0.147145</td>
+    </tr>
+    <tr>
+      <td>South Zapata Trail</td>
+      <td>Zapata Falls STL</td>
+      <td>0.153155</td>
+      <td>39.054858</td>
+      <td>0.664357</td>
+      <td>0.518742</td>
+    </tr>
+    <tr>
+      <td>South Zapata Trail</td>
+      <td>Zapata Falls STL</td>
+      <td>0.000000</td>
+      <td>30.800722</td>
+      <td>0.167910</td>
+      <td>0.171794</td>
+    </tr>
+    <tr>
+      <td>La Garita Stock Driveway Trail</td>
+      <td>Little La Garita Creek STL</td>
+      <td>0.000000</td>
+      <td>31.771290</td>
+      <td>0.167910</td>
+      <td>0.433546</td>
+    </tr>
+    <tr>
+      <td>Archuleta Trail</td>
+      <td>Big Meadows Reservoir SWA</td>
+      <td>1.554454</td>
+      <td>38.313298</td>
+      <td>0.697243</td>
+      <td>0.576514</td>
+    </tr>
+    <tr>
+      <td>Lone Cone Connector Trail</td>
+      <td>Woods Lake SWA</td>
+      <td>0.002739</td>
+      <td>35.950720</td>
+      <td>0.365326</td>
+      <td>0.634949</td>
+    </tr>
+    <tr>
+      <td>Shoreline Trail</td>
+      <td>Woods Lake SWA</td>
+      <td>0.148312</td>
+      <td>36.289424</td>
+      <td>0.641353</td>
+      <td>0.771262</td>
+    </tr>
+    <tr>
+      <td>Wilson Mesa Spur Trail</td>
+      <td>Woods Lake SWA</td>
+      <td>0.015941</td>
+      <td>36.715854</td>
+      <td>0.438648</td>
+      <td>0.659617</td>
+    </tr>
+    <tr>
+      <td>Woods Lake Trail</td>
+      <td>Woods Lake SWA</td>
+      <td>0.000000</td>
+      <td>33.289611</td>
+      <td>0.151357</td>
+      <td>0.438587</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Kemp Breeze SWA</td>
+      <td>0.350977</td>
+      <td>39.141848</td>
+      <td>0.499681</td>
+      <td>0.579486</td>
+    </tr>
+    <tr>
+      <td>Sarvis Creek Trail</td>
+      <td>Sarvis Creek SWA</td>
+      <td>1.162095</td>
+      <td>36.151635</td>
+      <td>0.693578</td>
+      <td>0.757226</td>
+    </tr>
+    <tr>
+      <td>Never Summer Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>25.353915</td>
+      <td>0.442447</td>
+      <td>0.587101</td>
+    </tr>
+    <tr>
+      <td>Pearl Lake Trail</td>
+      <td>Pearl Lake State Park</td>
+      <td>0.010000</td>
+      <td>35.011771</td>
+      <td>0.320716</td>
+      <td>0.479429</td>
+    </tr>
+    <tr>
+      <td>Roxborough Connection Trail</td>
+      <td>Roxborough State Park</td>
+      <td>0.525507</td>
+      <td>50.230219</td>
+      <td>0.047888</td>
+      <td>0.170443</td>
+    </tr>
+    <tr>
+      <td>Seven Bridges Trail</td>
+      <td></td>
+      <td>0.476577</td>
+      <td>42.293248</td>
+      <td>0.184706</td>
+      <td>0.189013</td>
+    </tr>
+    <tr>
+      <td>Brookside Ag Trail</td>
+      <td>McArthur Gulch STL</td>
+      <td>0.502656</td>
+      <td>39.636435</td>
+      <td>0.616264</td>
+      <td>0.714247</td>
+    </tr>
+    <tr>
+      <td>Colorado Trail Segment 12</td>
+      <td>Clear Creek Reservoir SWA</td>
+      <td>0.192598</td>
+      <td>37.995740</td>
+      <td>0.350466</td>
+      <td>0.432637</td>
+    </tr>
+    <tr>
+      <td>Lost Creek Trail</td>
+      <td>Mount Evans SWA</td>
+      <td>0.945598</td>
+      <td>39.805307</td>
+      <td>0.665052</td>
+      <td>0.751184</td>
+    </tr>
+    <tr>
+      <td>Homestead Meadows Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.201969</td>
+      <td>38.576610</td>
+      <td>0.479345</td>
+      <td>0.705828</td>
+    </tr>
+    <tr>
+      <td>Medicine Bow Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.019703</td>
+      <td>29.298069</td>
+      <td>0.319532</td>
+      <td>0.494585</td>
+    </tr>
+    <tr>
+      <td>Medicine Bow Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.029528</td>
+      <td>28.672818</td>
+      <td>0.326289</td>
+      <td>0.494585</td>
+    </tr>
+    <tr>
+      <td>Timber Trail</td>
+      <td></td>
+      <td>0.005512</td>
+      <td>50.726110</td>
+      <td>0.044482</td>
+      <td>0.285138</td>
+    </tr>
+    <tr>
+      <td>Neighborhood Access Trail</td>
+      <td></td>
+      <td>0.014173</td>
+      <td>50.817416</td>
+      <td>0.046951</td>
+      <td>0.281860</td>
+    </tr>
+    <tr>
+      <td>Foothills Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.351986</td>
+      <td>0.021305</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>South Loop Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.004724</td>
+      <td>50.666008</td>
+      <td>0.043084</td>
+      <td>0.283139</td>
+    </tr>
+    <tr>
+      <td>Carpenter Road Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.848117</td>
+      <td>0.019907</td>
+      <td>0.220825</td>
+    </tr>
+    <tr>
+      <td>Foothills Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000787</td>
+      <td>50.569949</td>
+      <td>0.036283</td>
+      <td>0.246956</td>
+    </tr>
+    <tr>
+      <td>Foothills Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>50.038098</td>
+      <td>0.023775</td>
+      <td>0.224782</td>
+    </tr>
+    <tr>
+      <td>Coyote Ridge Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.004331</td>
+      <td>50.611041</td>
+      <td>0.043084</td>
+      <td>0.268462</td>
+    </tr>
+    <tr>
+      <td>Overlook Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.027511</td>
+      <td>0.019907</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>Coyote Ridge Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.834292</td>
+      <td>0.023775</td>
+      <td>0.231036</td>
+    </tr>
+    <tr>
+      <td>Foothills Trail</td>
+      <td></td>
+      <td>0.001181</td>
+      <td>50.733119</td>
+      <td>0.036283</td>
+      <td>0.266740</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cochetopa SWA</td>
+      <td>0.415748</td>
+      <td>36.127786</td>
+      <td>0.614900</td>
+      <td>0.738355</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Sapinero SWA</td>
+      <td>0.960124</td>
+      <td>38.741924</td>
+      <td>0.694284</td>
+      <td>0.767580</td>
+    </tr>
+    <tr>
+      <td>Chavez Trail</td>
+      <td></td>
+      <td>0.088656</td>
+      <td>46.742903</td>
+      <td>0.173039</td>
+      <td>0.324505</td>
+    </tr>
+    <tr>
+      <td>Eldorado Canyon Trail</td>
+      <td>Eldorado Canyon State Park</td>
+      <td>0.075813</td>
+      <td>46.909894</td>
+      <td>0.081197</td>
+      <td>0.356082</td>
+    </tr>
+    <tr>
+      <td>Union Pass Trail</td>
+      <td>Georgetown SWA</td>
+      <td>0.696007</td>
+      <td>37.556451</td>
+      <td>0.693731</td>
+      <td>0.757707</td>
+    </tr>
+    <tr>
+      <td>Boulders Trail</td>
+      <td>Paddock SWA</td>
+      <td>0.045726</td>
+      <td>32.592200</td>
+      <td>0.584952</td>
+      <td>0.696320</td>
+    </tr>
+    <tr>
+      <td>Elk Run Connector Trail</td>
+      <td>Paddock SWA</td>
+      <td>0.000000</td>
+      <td>32.092758</td>
+      <td>0.154308</td>
+      <td>0.443263</td>
+    </tr>
+    <tr>
+      <td>Beartrack Lakes Trail</td>
+      <td>Mount Evans SWA</td>
+      <td>1.025073</td>
+      <td>37.081689</td>
+      <td>0.689875</td>
+      <td>0.761930</td>
+    </tr>
+    <tr>
+      <td>Overland Loop</td>
+      <td></td>
+      <td>0.032087</td>
+      <td>48.456379</td>
+      <td>0.048720</td>
+      <td>0.258693</td>
+    </tr>
+    <tr>
+      <td>Bear Paw Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.990370</td>
+      <td>39.757644</td>
+      <td>0.667208</td>
+      <td>0.745496</td>
+    </tr>
+    <tr>
+      <td>Lion's Back Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.338349</td>
+      <td>40.441262</td>
+      <td>0.623853</td>
+      <td>0.705411</td>
+    </tr>
+    <tr>
+      <td>Valco Ponds Fishing and Arkansas River Access Trail</td>
+      <td>Lake Pueblo State Park</td>
+      <td>0.000000</td>
+      <td>54.222476</td>
+      <td>0.021220</td>
+      <td>0.179467</td>
+    </tr>
+    <tr>
+      <td>Valco Ponds Fishing and Arkansas River Access Trail</td>
+      <td>Lake Pueblo State Park</td>
+      <td>0.000000</td>
+      <td>54.132627</td>
+      <td>0.021220</td>
+      <td>0.179467</td>
+    </tr>
+    <tr>
+      <td>Valco Ponds Fishing and Arkansas River Access Trail</td>
+      <td>Lake Pueblo State Park</td>
+      <td>0.000000</td>
+      <td>54.132627</td>
+      <td>0.021220</td>
+      <td>0.179467</td>
+    </tr>
+    <tr>
+      <td>Valco Ponds Fishing and Arkansas River Access Trail</td>
+      <td>Lake Pueblo State Park</td>
+      <td>0.000000</td>
+      <td>54.282408</td>
+      <td>0.021220</td>
+      <td>0.179467</td>
+    </tr>
+    <tr>
+      <td>East Sand Hills Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.453296</td>
+      <td>32.957289</td>
+      <td>0.634908</td>
+      <td>0.762843</td>
+    </tr>
+    <tr>
+      <td>Valco Ponds Fishing and Arkansas River Access Trail</td>
+      <td>Lake Pueblo State Park</td>
+      <td>0.000000</td>
+      <td>54.369416</td>
+      <td>0.021220</td>
+      <td>0.179467</td>
+    </tr>
+    <tr>
+      <td>Seven Utes Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.270478</td>
+      <td>28.895929</td>
+      <td>0.821720</td>
+      <td>0.824239</td>
+    </tr>
+    <tr>
+      <td>West Face Redgarden Climbing Access Trail</td>
+      <td>Eldorado Canyon State Park</td>
+      <td>0.107579</td>
+      <td>47.703257</td>
+      <td>0.065086</td>
+      <td>0.330974</td>
+    </tr>
+    <tr>
+      <td>Streamside Trail</td>
+      <td>Eldorado Canyon State Park</td>
+      <td>0.026969</td>
+      <td>48.195064</td>
+      <td>0.059074</td>
+      <td>0.332467</td>
+    </tr>
+    <tr>
+      <td>West Ridge Climbing Access Trail</td>
+      <td>Eldorado Canyon State Park</td>
+      <td>0.107579</td>
+      <td>47.703257</td>
+      <td>0.065086</td>
+      <td>0.330974</td>
+    </tr>
+    <tr>
+      <td>Preacher's Hollow Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.220195</td>
+      <td>37.900959</td>
+      <td>0.265854</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>School Pond Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.176630</td>
+      <td>37.890696</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>School Pond Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.156761</td>
+      <td>37.952804</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Ranger Ridge Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.180458</td>
+      <td>38.013941</td>
+      <td>0.265854</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Big Hole Wash Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.009548</td>
+      <td>43.343138</td>
+      <td>0.178734</td>
+      <td>0.309058</td>
+    </tr>
+    <tr>
+      <td>Salt Lick Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.011969</td>
+      <td>42.388749</td>
+      <td>0.213431</td>
+      <td>0.335400</td>
+    </tr>
+    <tr>
+      <td>Indian Creek Trail</td>
+      <td>Mount Evans SWA</td>
+      <td>0.878335</td>
+      <td>39.509373</td>
+      <td>0.667208</td>
+      <td>0.742636</td>
+    </tr>
+    <tr>
+      <td>Beartrack Lakes Trail</td>
+      <td>Mount Evans SWA</td>
+      <td>1.092143</td>
+      <td>37.658420</td>
+      <td>0.697778</td>
+      <td>0.761930</td>
+    </tr>
+    <tr>
+      <td>Captain Mountain Trail</td>
+      <td>Mount Evans SWA</td>
+      <td>1.009734</td>
+      <td>37.525875</td>
+      <td>0.686355</td>
+      <td>0.761759</td>
+    </tr>
+    <tr>
+      <td>Captain Mountain Trail</td>
+      <td>Mount Evans SWA</td>
+      <td>1.047462</td>
+      <td>39.013494</td>
+      <td>0.667208</td>
+      <td>0.749710</td>
+    </tr>
+    <tr>
+      <td>Section 16 Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>50.094688</td>
+      <td>0.027195</td>
+      <td>0.156054</td>
+    </tr>
+    <tr>
+      <td>Coyote Ridge Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.711277</td>
+      <td>0.019907</td>
+      <td>0.221432</td>
+    </tr>
+    <tr>
+      <td>Mahogany Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>43.629520</td>
+      <td>0.095318</td>
+      <td>0.279660</td>
+    </tr>
+    <tr>
+      <td>Neidrach Nature Trail</td>
+      <td>Barr Lake State Park</td>
+      <td>0.005906</td>
+      <td>50.728616</td>
+      <td>0.043084</td>
+      <td>0.262599</td>
+    </tr>
+    <tr>
+      <td>Dog of?f Leash Area Trail</td>
+      <td>Cherry Creek State Park</td>
+      <td>0.000000</td>
+      <td>50.840096</td>
+      <td>0.021130</td>
+      <td>0.227299</td>
+    </tr>
+    <tr>
+      <td>Dog of?f Leash Area Trail</td>
+      <td>Cherry Creek State Park</td>
+      <td>0.000000</td>
+      <td>50.869580</td>
+      <td>0.021130</td>
+      <td>0.227299</td>
+    </tr>
+    <tr>
+      <td>Bear Track Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>51.200209</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Soaring Kestral Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.634676</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Walker Ranch Loop</td>
+      <td>Eldorado Canyon State Park</td>
+      <td>0.140569</td>
+      <td>45.608940</td>
+      <td>0.249129</td>
+      <td>0.372614</td>
+    </tr>
+    <tr>
+      <td>Black Bear Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>39.044303</td>
+      <td>0.129037</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>4 Mile Overlook Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>39.295005</td>
+      <td>0.129037</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Hammer Homestead Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>38.998291</td>
+      <td>0.129037</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Cabin Creek Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>39.089479</td>
+      <td>0.129037</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Sand Creek Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>39.049852</td>
+      <td>0.129037</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Willow Creek Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>38.849617</td>
+      <td>0.131569</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Bobcat Trail</td>
+      <td>Rifle Falls State Park</td>
+      <td>0.000000</td>
+      <td>41.262791</td>
+      <td>0.158311</td>
+      <td>0.366261</td>
+    </tr>
+    <tr>
+      <td>Lake Access Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.027511</td>
+      <td>0.021305</td>
+      <td>0.205273</td>
+    </tr>
+    <tr>
+      <td>North Beaver Creek Road</td>
+      <td>Gunnison SWA</td>
+      <td>0.491732</td>
+      <td>41.344583</td>
+      <td>0.574821</td>
+      <td>0.749692</td>
+    </tr>
+    <tr>
+      <td>Sneve Gulch Trail</td>
+      <td>Sylvan Lake State Park</td>
+      <td>0.821538</td>
+      <td>33.471342</td>
+      <td>0.693147</td>
+      <td>0.765096</td>
+    </tr>
+    <tr>
+      <td>Horse Draw Road</td>
+      <td>South Nipple Rim STL</td>
+      <td>0.000000</td>
+      <td>43.119625</td>
+      <td>0.126829</td>
+      <td>0.265245</td>
+    </tr>
+    <tr>
+      <td>Major Draw Road</td>
+      <td>Simsberry Draw STL</td>
+      <td>0.000000</td>
+      <td>42.646189</td>
+      <td>0.145160</td>
+      <td>0.280436</td>
+    </tr>
+    <tr>
+      <td>BLM Trail 5865a</td>
+      <td>Cottonwood Ridge STL</td>
+      <td>0.000000</td>
+      <td>44.323097</td>
+      <td>0.104643</td>
+      <td>0.115695</td>
+    </tr>
+    <tr>
+      <td>BLM Trail 6106a</td>
+      <td>McCoy Gulch STL</td>
+      <td>0.000000</td>
+      <td>48.590132</td>
+      <td>0.069481</td>
+      <td>0.131234</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Carter Place STL</td>
+      <td>0.000000</td>
+      <td>49.083005</td>
+      <td>0.027893</td>
+      <td>0.109342</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Escalante SWA - Hamilton Tract</td>
+      <td>0.000000</td>
+      <td>50.524981</td>
+      <td>0.014163</td>
+      <td>0.080554</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Escalante SWA - Hamilton Tract</td>
+      <td>0.000000</td>
+      <td>50.456381</td>
+      <td>0.014163</td>
+      <td>0.080554</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Carter Place STL</td>
+      <td>0.000000</td>
+      <td>49.521453</td>
+      <td>0.021129</td>
+      <td>0.107006</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Escalante SWA - Hamilton Tract</td>
+      <td>0.000000</td>
+      <td>50.568442</td>
+      <td>0.011763</td>
+      <td>0.080460</td>
+    </tr>
+    <tr>
+      <td>McDonck 10P Road</td>
+      <td>McCluskey SWA</td>
+      <td>0.000000</td>
+      <td>48.990227</td>
+      <td>0.076572</td>
+      <td>0.127165</td>
+    </tr>
+    <tr>
+      <td>BLM Route 5972</td>
+      <td>Arkansas Headwaters RA - Point Barr (R&amp;PP Site)</td>
+      <td>0.000000</td>
+      <td>48.358142</td>
+      <td>0.036674</td>
+      <td>0.110236</td>
+    </tr>
+    <tr>
+      <td>West Cedar Mountain Road</td>
+      <td>West Rifle Creek SWA</td>
+      <td>0.000000</td>
+      <td>44.737890</td>
+      <td>0.094175</td>
+      <td>0.245371</td>
+    </tr>
+    <tr>
+      <td>Fistful of Dollars Trail</td>
+      <td>Arkansas Headwaters RA - Collegiate Peaks (R&amp;PP Site)</td>
+      <td>0.227122</td>
+      <td>44.116729</td>
+      <td>0.265532</td>
+      <td>0.273925</td>
+    </tr>
+    <tr>
+      <td>BLM Route 375</td>
+      <td>Arkansas Headwaters RA - BLM Site</td>
+      <td>0.425078</td>
+      <td>44.317934</td>
+      <td>0.224146</td>
+      <td>0.260001</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cabin Creek SWA</td>
+      <td>0.478089</td>
+      <td>35.907229</td>
+      <td>0.679586</td>
+      <td>0.762953</td>
+    </tr>
+    <tr>
+      <td>Fire Line Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>49.148003</td>
+      <td>0.019817</td>
+      <td>0.221432</td>
+    </tr>
+    <tr>
+      <td>Quarry Ridge Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>49.629118</td>
+      <td>0.019907</td>
+      <td>0.213982</td>
+    </tr>
+    <tr>
+      <td>Cheyenne Rim Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.011378</td>
+      <td>41.844800</td>
+      <td>0.225676</td>
+      <td>0.323890</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Larimer County Open Space</td>
+      <td>0.002953</td>
+      <td>43.150951</td>
+      <td>0.208060</td>
+      <td>0.310461</td>
+    </tr>
+    <tr>
+      <td>Towhee Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.001969</td>
+      <td>43.230618</td>
+      <td>0.160922</td>
+      <td>0.310576</td>
+    </tr>
+    <tr>
+      <td>Big Hole Wash Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.001575</td>
+      <td>42.394636</td>
+      <td>0.160063</td>
+      <td>0.290807</td>
+    </tr>
+    <tr>
+      <td>Cheyenne Rim Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>43.484115</td>
+      <td>0.107408</td>
+      <td>0.279924</td>
+    </tr>
+    <tr>
+      <td>Mahogany Loop</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>43.707409</td>
+      <td>0.095318</td>
+      <td>0.275168</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>44.379674</td>
+      <td>0.052305</td>
+      <td>0.245768</td>
+    </tr>
+    <tr>
+      <td>Pronghorn Loop</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>45.524467</td>
+      <td>0.042857</td>
+      <td>0.236330</td>
+    </tr>
+    <tr>
+      <td>BLM Route 300</td>
+      <td>Arkansas Headwaters RA - Ruby Mountain (R&amp;PP Site)</td>
+      <td>0.083849</td>
+      <td>45.118112</td>
+      <td>0.173330</td>
+      <td>0.130786</td>
+    </tr>
+    <tr>
+      <td>Blue Sky Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>49.765015</td>
+      <td>0.023685</td>
+      <td>0.231036</td>
+    </tr>
+    <tr>
+      <td>Hidden Valley Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.033071</td>
+      <td>50.791436</td>
+      <td>0.049445</td>
+      <td>0.241774</td>
+    </tr>
+    <tr>
+      <td>Inlet Bay Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.014173</td>
+      <td>49.772850</td>
+      <td>0.043084</td>
+      <td>0.278005</td>
+    </tr>
+    <tr>
+      <td>South Ridge Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.839692</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Limber Pine Equestrian Connector Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.209646</td>
+      <td>38.495876</td>
+      <td>0.477989</td>
+      <td>0.705828</td>
+    </tr>
+    <tr>
+      <td>BeaverCreek Spur A2 Road</td>
+      <td>Gunnison SWA</td>
+      <td>0.559303</td>
+      <td>40.959733</td>
+      <td>0.574821</td>
+      <td>0.752072</td>
+    </tr>
+    <tr>
+      <td>Sky Pilot Trail</td>
+      <td></td>
+      <td>0.295437</td>
+      <td>36.234008</td>
+      <td>0.702261</td>
+      <td>0.770027</td>
+    </tr>
+    <tr>
+      <td>Equestrian Spur Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.220195</td>
+      <td>37.900959</td>
+      <td>0.265854</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>James M. John Access Trail</td>
+      <td>Lake Dorothey SWA</td>
+      <td>0.010000</td>
+      <td>43.389901</td>
+      <td>0.136760</td>
+      <td>0.245697</td>
+    </tr>
+    <tr>
+      <td>James M. John Access Trail</td>
+      <td>Lake Dorothey SWA</td>
+      <td>0.010000</td>
+      <td>44.130890</td>
+      <td>0.112729</td>
+      <td>0.233710</td>
+    </tr>
+    <tr>
+      <td>Rainbow Trail</td>
+      <td>Middle Taylor Creek SWA</td>
+      <td>0.244682</td>
+      <td>39.215141</td>
+      <td>0.669758</td>
+      <td>0.712557</td>
+    </tr>
+    <tr>
+      <td>Levsa Nature Trail</td>
+      <td>Trinidad Lake State Park</td>
+      <td>0.001548</td>
+      <td>49.508086</td>
+      <td>0.024912</td>
+      <td>0.107695</td>
+    </tr>
+    <tr>
+      <td>Blue Heron Trail</td>
+      <td>Arkansas Headwaters RA - Blue Heron</td>
+      <td>0.000000</td>
+      <td>53.764890</td>
+      <td>0.021220</td>
+      <td>0.083225</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>The Sloughs STL</td>
+      <td>0.000000</td>
+      <td>42.936836</td>
+      <td>0.127680</td>
+      <td>0.317338</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Baking Powder Ridge STL</td>
+      <td>0.000000</td>
+      <td>43.208954</td>
+      <td>0.126600</td>
+      <td>0.306435</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Turner's Creek STL</td>
+      <td>0.000000</td>
+      <td>38.067740</td>
+      <td>0.137383</td>
+      <td>0.171650</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Middle Wolf Creek STL</td>
+      <td>0.000000</td>
+      <td>43.792752</td>
+      <td>0.123216</td>
+      <td>0.133868</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Elk Springs Ranch SWA</td>
+      <td>0.000000</td>
+      <td>43.091382</td>
+      <td>0.126600</td>
+      <td>0.306435</td>
+    </tr>
+    <tr>
+      <td>Ridge Road</td>
+      <td>Ridgway State Park</td>
+      <td>0.387580</td>
+      <td>45.496261</td>
+      <td>0.293828</td>
+      <td>0.306383</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Coal Ridge STL</td>
+      <td>0.000000</td>
+      <td>44.265992</td>
+      <td>0.127228</td>
+      <td>0.131527</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Rio Blanco Lake SWA</td>
+      <td>0.000000</td>
+      <td>45.079433</td>
+      <td>0.097057</td>
+      <td>0.242387</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Rio Blanco Lake SWA</td>
+      <td>0.000000</td>
+      <td>45.502332</td>
+      <td>0.097057</td>
+      <td>0.243055</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>43.776315</td>
+      <td>0.127228</td>
+      <td>0.262654</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>43.669686</td>
+      <td>0.127228</td>
+      <td>0.268028</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Rio Blanco Lake SWA</td>
+      <td>0.000000</td>
+      <td>45.361853</td>
+      <td>0.097057</td>
+      <td>0.243055</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Colorow Mountain SWA</td>
+      <td>0.000000</td>
+      <td>40.205362</td>
+      <td>0.160843</td>
+      <td>0.370832</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Colorow Mountain SWA</td>
+      <td>0.000000</td>
+      <td>40.159158</td>
+      <td>0.160843</td>
+      <td>0.370832</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>45.087667</td>
+      <td>0.098315</td>
+      <td>0.242193</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>44.465703</td>
+      <td>0.106262</td>
+      <td>0.255098</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>44.194608</td>
+      <td>0.110590</td>
+      <td>0.261593</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>45.149367</td>
+      <td>0.097057</td>
+      <td>0.242387</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - Little Hills Unit</td>
+      <td>0.000000</td>
+      <td>44.257756</td>
+      <td>0.109034</td>
+      <td>0.256574</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>44.880979</td>
+      <td>0.097057</td>
+      <td>0.242387</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - Square S Summer Range Unit</td>
+      <td>0.076558</td>
+      <td>40.230159</td>
+      <td>0.260948</td>
+      <td>0.163183</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - Little Hills Unit</td>
+      <td>0.000000</td>
+      <td>44.182806</td>
+      <td>0.109421</td>
+      <td>0.255955</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - Square S Summer Range Unit</td>
+      <td>0.107546</td>
+      <td>38.998740</td>
+      <td>0.252456</td>
+      <td>0.177183</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>43.916012</td>
+      <td>0.127228</td>
+      <td>0.257694</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Colorow Mountain SWA</td>
+      <td>0.000000</td>
+      <td>41.404161</td>
+      <td>0.144431</td>
+      <td>0.328640</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Colorow Mountain SWA</td>
+      <td>0.000000</td>
+      <td>40.628511</td>
+      <td>0.153045</td>
+      <td>0.366049</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Piceance SWA - Square S Summer Range Unit</td>
+      <td>0.075100</td>
+      <td>40.666000</td>
+      <td>0.269110</td>
+      <td>0.146020</td>
+    </tr>
+    <tr>
+      <td>Pine Ridge #2 Road</td>
+      <td>Citadel STL</td>
+      <td>0.000000</td>
+      <td>42.465923</td>
+      <td>0.132578</td>
+      <td>0.324217</td>
+    </tr>
+    <tr>
+      <td>County Road 44.8</td>
+      <td>Burro Springs STL</td>
+      <td>0.029894</td>
+      <td>44.263891</td>
+      <td>0.271732</td>
+      <td>0.140459</td>
+    </tr>
+    <tr>
+      <td>Oxbow Primitive Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>49.859306</td>
+      <td>0.032924</td>
+      <td>0.215973</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Miller Ranch SWA</td>
+      <td>0.561368</td>
+      <td>38.398836</td>
+      <td>0.694510</td>
+      <td>0.768833</td>
+    </tr>
+    <tr>
+      <td>BLM Trail 6030a</td>
+      <td>Arkansas Headwaters RA - BV Whitewater Park</td>
+      <td>0.394637</td>
+      <td>43.637874</td>
+      <td>0.293491</td>
+      <td>0.305497</td>
+    </tr>
+    <tr>
+      <td>Rusty Buckle Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.082469</td>
+      <td>38.691558</td>
+      <td>0.667208</td>
+      <td>0.745496</td>
+    </tr>
+    <tr>
+      <td>Bear Canyon Trail</td>
+      <td>Roxborough State Park</td>
+      <td>0.451195</td>
+      <td>50.508260</td>
+      <td>0.047888</td>
+      <td>0.170443</td>
+    </tr>
+    <tr>
+      <td>Quarry Ridge Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000197</td>
+      <td>49.522213</td>
+      <td>0.019507</td>
+      <td>0.229489</td>
+    </tr>
+    <tr>
+      <td>Never Winter Climbing Access Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.253143</td>
+      <td>39.663598</td>
+      <td>0.667208</td>
+      <td>0.752570</td>
+    </tr>
+    <tr>
+      <td>Red Wall Climbing Access Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.253143</td>
+      <td>39.663598</td>
+      <td>0.667208</td>
+      <td>0.752570</td>
+    </tr>
+    <tr>
+      <td>Dines Wall Climbing Access Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.785471</td>
+      <td>40.414530</td>
+      <td>0.640943</td>
+      <td>0.546031</td>
+    </tr>
+    <tr>
+      <td>Staunton Ranch Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.170528</td>
+      <td>38.918284</td>
+      <td>0.624318</td>
+      <td>0.721695</td>
+    </tr>
+    <tr>
+      <td>Staunton Ranch Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.191598</td>
+      <td>38.986703</td>
+      <td>0.667208</td>
+      <td>0.745496</td>
+    </tr>
+    <tr>
+      <td>North Elk Creek Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.226971</td>
+      <td>38.249336</td>
+      <td>0.674012</td>
+      <td>0.752090</td>
+    </tr>
+    <tr>
+      <td>South Shore Trail</td>
+      <td>Trinidad Lake State Park</td>
+      <td>0.010000</td>
+      <td>48.676221</td>
+      <td>0.083097</td>
+      <td>0.115151</td>
+    </tr>
+    <tr>
+      <td>Historic Cabin Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.930400</td>
+      <td>40.134764</td>
+      <td>0.657352</td>
+      <td>0.738593</td>
+    </tr>
+    <tr>
+      <td>Bear Track Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.887066</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Pine Elfin Trail</td>
+      <td></td>
+      <td>0.588557</td>
+      <td>41.719818</td>
+      <td>0.380322</td>
+      <td>0.281298</td>
+    </tr>
+    <tr>
+      <td>Sapsucker Trail</td>
+      <td></td>
+      <td>0.619361</td>
+      <td>41.706340</td>
+      <td>0.382932</td>
+      <td>0.290445</td>
+    </tr>
+    <tr>
+      <td>Goshawk Trail</td>
+      <td></td>
+      <td>0.619361</td>
+      <td>41.706340</td>
+      <td>0.382932</td>
+      <td>0.298596</td>
+    </tr>
+    <tr>
+      <td>Screech Owl Trail</td>
+      <td></td>
+      <td>0.600578</td>
+      <td>41.818215</td>
+      <td>0.380062</td>
+      <td>0.275036</td>
+    </tr>
+    <tr>
+      <td>Goshawk Trail</td>
+      <td></td>
+      <td>0.589926</td>
+      <td>41.851014</td>
+      <td>0.386136</td>
+      <td>0.288242</td>
+    </tr>
+    <tr>
+      <td>Gould Loop Trail</td>
+      <td></td>
+      <td>0.597257</td>
+      <td>32.820414</td>
+      <td>0.602877</td>
+      <td>0.706907</td>
+    </tr>
+    <tr>
+      <td>Seven Utes Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.270478</td>
+      <td>28.895929</td>
+      <td>0.821720</td>
+      <td>0.824239</td>
+    </tr>
+    <tr>
+      <td>Seven Utes Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.362853</td>
+      <td>29.589188</td>
+      <td>0.831446</td>
+      <td>0.824239</td>
+    </tr>
+    <tr>
+      <td>Montgomery Pass Road West</td>
+      <td>State Forest State Park</td>
+      <td>0.000000</td>
+      <td>27.692475</td>
+      <td>0.174802</td>
+      <td>0.462963</td>
+    </tr>
+    <tr>
+      <td>Beaver Lodge Nature Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.434457</td>
+      <td>34.135913</td>
+      <td>0.686486</td>
+      <td>0.762843</td>
+    </tr>
+    <tr>
+      <td>Jack Dickens Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.087984</td>
+      <td>29.410429</td>
+      <td>0.323624</td>
+      <td>0.494037</td>
+    </tr>
+    <tr>
+      <td>Mountain Muhly Trail</td>
+      <td></td>
+      <td>0.078027</td>
+      <td>45.968924</td>
+      <td>0.225333</td>
+      <td>0.348322</td>
+    </tr>
+    <tr>
+      <td>Government Creek Road</td>
+      <td>State Forest State Park</td>
+      <td>0.041192</td>
+      <td>29.422457</td>
+      <td>0.330668</td>
+      <td>0.489910</td>
+    </tr>
+    <tr>
+      <td>Poison Canyon Downhill Trail</td>
+      <td>Fishers Peak State Park</td>
+      <td>0.000000</td>
+      <td>50.479861</td>
+      <td>0.021130</td>
+      <td>0.107115</td>
+    </tr>
+    <tr>
+      <td>Goldenrod Trail</td>
+      <td>Fishers Peak State Park</td>
+      <td>0.000000</td>
+      <td>50.582081</td>
+      <td>0.021130</td>
+      <td>0.107115</td>
+    </tr>
+    <tr>
+      <td>Upper Lone Cub Trail</td>
+      <td>Fishers Peak State Park</td>
+      <td>0.000000</td>
+      <td>50.175911</td>
+      <td>0.021130</td>
+      <td>0.200965</td>
+    </tr>
+    <tr>
+      <td>Lower Lone Cub Trail</td>
+      <td>Fishers Peak State Park</td>
+      <td>0.000000</td>
+      <td>50.754977</td>
+      <td>0.021130</td>
+      <td>0.100724</td>
+    </tr>
+    <tr>
+      <td>Osita Point Trail</td>
+      <td>Fishers Peak State Park</td>
+      <td>0.000000</td>
+      <td>47.113002</td>
+      <td>0.019817</td>
+      <td>0.207300</td>
+    </tr>
+    <tr>
+      <td>Osita Ridge Trail</td>
+      <td>Fishers Peak State Park</td>
+      <td>0.000000</td>
+      <td>48.647771</td>
+      <td>0.021450</td>
+      <td>0.201105</td>
+    </tr>
+    <tr>
+      <td>North Meadow Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>50.868369</td>
+      <td>0.024998</td>
+      <td>0.233037</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Wahatoya SWA</td>
+      <td>0.000000</td>
+      <td>48.872548</td>
+      <td>0.035904</td>
+      <td>0.111222</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Wahatoya SWA</td>
+      <td>0.000000</td>
+      <td>48.885131</td>
+      <td>0.035904</td>
+      <td>0.111222</td>
+    </tr>
+    <tr>
+      <td>Black Bear Trail</td>
+      <td></td>
+      <td>0.311743</td>
+      <td>51.898352</td>
+      <td>0.049286</td>
+      <td>0.151066</td>
+    </tr>
+    <tr>
+      <td>Black Bear Trail</td>
+      <td></td>
+      <td>0.516276</td>
+      <td>50.174633</td>
+      <td>0.049312</td>
+      <td>0.138954</td>
+    </tr>
+    <tr>
+      <td>Cummings Cabin Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.270058</td>
+      <td>38.364897</td>
+      <td>0.394618</td>
+      <td>0.482912</td>
+    </tr>
+    <tr>
+      <td>Horsetooth Rock Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.710859</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Pole Gulch Road</td>
+      <td>Pole Gulch STL</td>
+      <td>0.000000</td>
+      <td>42.713844</td>
+      <td>0.145100</td>
+      <td>0.325712</td>
+    </tr>
+    <tr>
+      <td>Major Draw Road</td>
+      <td>Simsberry Draw STL</td>
+      <td>0.000000</td>
+      <td>42.484185</td>
+      <td>0.145160</td>
+      <td>0.284327</td>
+    </tr>
+    <tr>
+      <td>Serviceberry Road</td>
+      <td>Cedars STL</td>
+      <td>0.000000</td>
+      <td>42.840454</td>
+      <td>0.138205</td>
+      <td>0.310343</td>
+    </tr>
+    <tr>
+      <td>Godiva Rim Road</td>
+      <td>Godiva Rim STL</td>
+      <td>0.000000</td>
+      <td>42.232006</td>
+      <td>0.141776</td>
+      <td>0.323964</td>
+    </tr>
+    <tr>
+      <td>East Cross Mountain South Road</td>
+      <td>Cross Mountain STL</td>
+      <td>0.000000</td>
+      <td>43.521547</td>
+      <td>0.127680</td>
+      <td>0.275475</td>
+    </tr>
+    <tr>
+      <td>Dripping Rock Spring Road</td>
+      <td>Raftopoulos Hunting Lease</td>
+      <td>0.000000</td>
+      <td>46.304322</td>
+      <td>0.030789</td>
+      <td>0.244183</td>
+    </tr>
+    <tr>
+      <td>Johnson Draw Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>39.282548</td>
+      <td>0.141663</td>
+      <td>0.404961</td>
+    </tr>
+    <tr>
+      <td>Pinyon Ridge Road</td>
+      <td>Elk Springs #1 STL</td>
+      <td>0.000000</td>
+      <td>43.139163</td>
+      <td>0.126600</td>
+      <td>0.306435</td>
+    </tr>
+    <tr>
+      <td>Upper Gee Flats Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>41.400303</td>
+      <td>0.144853</td>
+      <td>0.307919</td>
+    </tr>
+    <tr>
+      <td>Pinyon Ridge Road</td>
+      <td>Elk Springs #1 STL</td>
+      <td>0.000000</td>
+      <td>43.177381</td>
+      <td>0.126600</td>
+      <td>0.306435</td>
+    </tr>
+    <tr>
+      <td>Middle Mountain Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>36.821293</td>
+      <td>0.141736</td>
+      <td>0.420731</td>
+    </tr>
+    <tr>
+      <td>Middle Mountain Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>36.306627</td>
+      <td>0.155470</td>
+      <td>0.425816</td>
+    </tr>
+    <tr>
+      <td>Johnson Flats Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>36.170075</td>
+      <td>0.152805</td>
+      <td>0.426858</td>
+    </tr>
+    <tr>
+      <td>Johnson Flats Road</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>37.239936</td>
+      <td>0.140915</td>
+      <td>0.422205</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>42.134167</td>
+      <td>0.150310</td>
+      <td>0.328893</td>
+    </tr>
+    <tr>
+      <td>East Cross Mountain South Road</td>
+      <td>Cross Mountain STL</td>
+      <td>0.000000</td>
+      <td>43.435331</td>
+      <td>0.127680</td>
+      <td>0.275475</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Vermillion Creek STL</td>
+      <td>0.000000</td>
+      <td>44.785756</td>
+      <td>0.068093</td>
+      <td>0.239343</td>
+    </tr>
+    <tr>
+      <td>Upper Yellowcat Wash Road</td>
+      <td>Sevenmile Ridge STL</td>
+      <td>0.000000</td>
+      <td>42.422623</td>
+      <td>0.151731</td>
+      <td>0.320072</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>39.876720</td>
+      <td>0.140784</td>
+      <td>0.320221</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>39.423428</td>
+      <td>0.140921</td>
+      <td>0.335801</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>39.409998</td>
+      <td>0.142713</td>
+      <td>0.335801</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>39.450612</td>
+      <td>0.142713</td>
+      <td>0.335801</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>42.636368</td>
+      <td>0.131501</td>
+      <td>0.285008</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>41.717831</td>
+      <td>0.144853</td>
+      <td>0.307032</td>
+    </tr>
+    <tr>
+      <td>Upper Yellowcat Wash Road</td>
+      <td>Sevenmile Ridge STL</td>
+      <td>0.000000</td>
+      <td>42.738798</td>
+      <td>0.145160</td>
+      <td>0.324217</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Bald Mountain STL</td>
+      <td>0.000000</td>
+      <td>43.265711</td>
+      <td>0.137924</td>
+      <td>0.282128</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Reservoir Draw STL</td>
+      <td>0.000000</td>
+      <td>40.804457</td>
+      <td>0.142934</td>
+      <td>0.328640</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Bald Mountain STL</td>
+      <td>0.000000</td>
+      <td>42.834357</td>
+      <td>0.140220</td>
+      <td>0.280436</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cold Springs Mountain STL</td>
+      <td>0.000000</td>
+      <td>40.122499</td>
+      <td>0.142934</td>
+      <td>0.320221</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Bald Mountain STL</td>
+      <td>0.000000</td>
+      <td>43.075886</td>
+      <td>0.143305</td>
+      <td>0.280436</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Big Hole Gulch STL</td>
+      <td>0.000000</td>
+      <td>41.984873</td>
+      <td>0.147963</td>
+      <td>0.328640</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Little Snake SWA</td>
+      <td>0.000000</td>
+      <td>43.757420</td>
+      <td>0.123183</td>
+      <td>0.228113</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Greasewood STL</td>
+      <td>0.000000</td>
+      <td>43.565097</td>
+      <td>0.136223</td>
+      <td>0.267573</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Little Snake SWA</td>
+      <td>0.000000</td>
+      <td>43.749260</td>
+      <td>0.122809</td>
+      <td>0.149895</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Simsberry Draw STL</td>
+      <td>0.000000</td>
+      <td>42.655233</td>
+      <td>0.145160</td>
+      <td>0.280436</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Simsberry Draw STL</td>
+      <td>0.000000</td>
+      <td>42.682333</td>
+      <td>0.145160</td>
+      <td>0.280436</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Raftopoulos Hunting Lease</td>
+      <td>0.000000</td>
+      <td>42.648654</td>
+      <td>0.140220</td>
+      <td>0.324217</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Bald Mountain STL</td>
+      <td>0.000000</td>
+      <td>41.693970</td>
+      <td>0.151731</td>
+      <td>0.323964</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Little Snake SWA</td>
+      <td>0.000000</td>
+      <td>43.757420</td>
+      <td>0.123183</td>
+      <td>0.228113</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Reservoir Draw STL</td>
+      <td>0.000000</td>
+      <td>40.993026</td>
+      <td>0.144716</td>
+      <td>0.328640</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>South Nipple Rim STL</td>
+      <td>0.000000</td>
+      <td>42.363251</td>
+      <td>0.150310</td>
+      <td>0.328893</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>South 80 STL</td>
+      <td>0.000000</td>
+      <td>41.684695</td>
+      <td>0.150310</td>
+      <td>0.332784</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Powder Wash STL</td>
+      <td>0.000000</td>
+      <td>42.691719</td>
+      <td>0.144726</td>
+      <td>0.320128</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Scandinavian Gulch STL</td>
+      <td>0.000000</td>
+      <td>42.502335</td>
+      <td>0.146536</td>
+      <td>0.320072</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Raftopoulos Hunting Lease</td>
+      <td>0.000000</td>
+      <td>43.038092</td>
+      <td>0.143679</td>
+      <td>0.321289</td>
+    </tr>
+    <tr>
+      <td>Fraser to Granby Trail</td>
+      <td>Granby Ranch (Conservation Easement)</td>
+      <td>0.610114</td>
+      <td>38.085419</td>
+      <td>0.625529</td>
+      <td>0.730785</td>
+    </tr>
+    <tr>
+      <td>Devil's Creek Trailheads Road</td>
+      <td>Lake Fork Gunnison SWA (Fishing Easement)</td>
+      <td>0.177090</td>
+      <td>40.117334</td>
+      <td>0.449243</td>
+      <td>0.587084</td>
+    </tr>
+    <tr>
+      <td>Trail Gulch</td>
+      <td>Beaver Creek SWA</td>
+      <td>0.000000</td>
+      <td>43.618247</td>
+      <td>0.104643</td>
+      <td>0.245697</td>
+    </tr>
+    <tr>
+      <td>High Line Canal Trail</td>
+      <td>Chatfield State Park</td>
+      <td>0.088953</td>
+      <td>53.451555</td>
+      <td>0.026700</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Foothills Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.049321</td>
+      <td>0.019907</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>North Loop Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>49.985986</td>
+      <td>0.019907</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Ridgway State Park</td>
+      <td>0.373626</td>
+      <td>45.910815</td>
+      <td>0.297579</td>
+      <td>0.300242</td>
+    </tr>
+    <tr>
+      <td>Ginny Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>48.495661</td>
+      <td>0.021216</td>
+      <td>0.229749</td>
+    </tr>
+    <tr>
+      <td>Red Rock Canyon Overlook Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>50.138880</td>
+      <td>0.027040</td>
+      <td>0.212145</td>
+    </tr>
+    <tr>
+      <td>Upper Codell Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>51.001183</td>
+      <td>0.022528</td>
+      <td>0.196464</td>
+    </tr>
+    <tr>
+      <td>Dakota Ridge South Trail</td>
+      <td></td>
+      <td>0.013583</td>
+      <td>50.899121</td>
+      <td>0.045705</td>
+      <td>0.147911</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Dutch Gulch SWA</td>
+      <td>0.260039</td>
+      <td>40.241962</td>
+      <td>0.567724</td>
+      <td>0.503835</td>
+    </tr>
+    <tr>
+      <td>McIntosh Road</td>
+      <td>Gunnison SWA</td>
+      <td>0.801146</td>
+      <td>39.048961</td>
+      <td>0.689222</td>
+      <td>0.768833</td>
+    </tr>
+    <tr>
+      <td>North Beaver Creek Road</td>
+      <td>Gunnison SWA</td>
+      <td>0.563685</td>
+      <td>40.897779</td>
+      <td>0.578378</td>
+      <td>0.752072</td>
+    </tr>
+    <tr>
+      <td>Van Tuyl Ranch Trail</td>
+      <td>Gunnison River SWA</td>
+      <td>0.151969</td>
+      <td>40.747998</td>
+      <td>0.444176</td>
+      <td>0.585546</td>
+    </tr>
+    <tr>
+      <td>Perimeter Trail</td>
+      <td>Barr Lake State Park</td>
+      <td>0.007087</td>
+      <td>50.922398</td>
+      <td>0.043084</td>
+      <td>0.264709</td>
+    </tr>
+    <tr>
+      <td>First Creek Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>51.396555</td>
+      <td>0.025407</td>
+      <td>0.238909</td>
+    </tr>
+    <tr>
+      <td>Tunnel Drive Trail</td>
+      <td>Tunnel Drive STL</td>
+      <td>0.000000</td>
+      <td>52.531484</td>
+      <td>0.021220</td>
+      <td>0.097788</td>
+    </tr>
+    <tr>
+      <td>Tom Bennhoff Lake Trail</td>
+      <td>Georgetown SWA</td>
+      <td>0.694963</td>
+      <td>36.653065</td>
+      <td>0.614050</td>
+      <td>0.761649</td>
+    </tr>
+    <tr>
+      <td>Tom Bennhoff Lake Trail</td>
+      <td>Georgetown SWA</td>
+      <td>0.721856</td>
+      <td>36.976079</td>
+      <td>0.609412</td>
+      <td>0.761649</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Cochetopa SWA</td>
+      <td>0.423228</td>
+      <td>38.347933</td>
+      <td>0.563342</td>
+      <td>0.724800</td>
+    </tr>
+    <tr>
+      <td>BLM Route 8241E</td>
+      <td>Garfield Creek SWA</td>
+      <td>0.297040</td>
+      <td>41.714323</td>
+      <td>0.505564</td>
+      <td>0.530719</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Kemp Breeze SWA</td>
+      <td>0.344474</td>
+      <td>39.119830</td>
+      <td>0.499681</td>
+      <td>0.586667</td>
+    </tr>
+    <tr>
+      <td>Dixon Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.281494</td>
+      <td>47.078529</td>
+      <td>0.054298</td>
+      <td>0.227270</td>
+    </tr>
+    <tr>
+      <td>Dixon Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>47.554283</td>
+      <td>0.030212</td>
+      <td>0.237062</td>
+    </tr>
+    <tr>
+      <td>Mountain Loop</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.512679</td>
+      <td>46.930075</td>
+      <td>0.175217</td>
+      <td>0.281162</td>
+    </tr>
+    <tr>
+      <td>Dragon's Backbone Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.385706</td>
+      <td>47.845333</td>
+      <td>0.046553</td>
+      <td>0.237062</td>
+    </tr>
+    <tr>
+      <td>Carnage Canyon Trail</td>
+      <td>Burns Canyon STL</td>
+      <td>0.198321</td>
+      <td>44.545658</td>
+      <td>0.202064</td>
+      <td>0.254363</td>
+    </tr>
+    <tr>
+      <td>Whipple Trail Main Route</td>
+      <td>Arkansas Headwaters RA - BV Whitewater Park</td>
+      <td>0.385341</td>
+      <td>43.553555</td>
+      <td>0.290244</td>
+      <td>0.305497</td>
+    </tr>
+    <tr>
+      <td>Pueblo Res River Access Northwest Trail</td>
+      <td>Lake Pueblo SWAA</td>
+      <td>0.000000</td>
+      <td>54.137712</td>
+      <td>0.021220</td>
+      <td>0.080468</td>
+    </tr>
+    <tr>
+      <td>Few Dollars More Trail</td>
+      <td>Arkansas Headwaters RA - BLM Site</td>
+      <td>0.216914</td>
+      <td>44.461730</td>
+      <td>0.267000</td>
+      <td>0.271389</td>
+    </tr>
+    <tr>
+      <td>Chaquita Peak Road</td>
+      <td>Chiquito Peak STL</td>
+      <td>0.000000</td>
+      <td>44.246822</td>
+      <td>0.111616</td>
+      <td>0.123696</td>
+    </tr>
+    <tr>
+      <td>Garambuyo Road</td>
+      <td>The Poso STL</td>
+      <td>0.259453</td>
+      <td>42.761465</td>
+      <td>0.529751</td>
+      <td>0.463660</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Dutch Gulch SWA</td>
+      <td>1.112699</td>
+      <td>39.462779</td>
+      <td>0.678823</td>
+      <td>0.581234</td>
+    </tr>
+    <tr>
+      <td>Stevens/Bear Springs Gulch Road</td>
+      <td>Centennial SWA</td>
+      <td>0.554393</td>
+      <td>39.520246</td>
+      <td>0.592407</td>
+      <td>0.750750</td>
+    </tr>
+    <tr>
+      <td>Cabin Draw Road</td>
+      <td>Middle Creek STL</td>
+      <td>0.136903</td>
+      <td>39.727507</td>
+      <td>0.588457</td>
+      <td>0.735469</td>
+    </tr>
+    <tr>
+      <td>Old Dry Creek Road</td>
+      <td>Dry Creek STL</td>
+      <td>0.000000</td>
+      <td>44.844406</td>
+      <td>0.140800</td>
+      <td>0.130593</td>
+    </tr>
+    <tr>
+      <td>BLM Trail 6045B</td>
+      <td>Arkansas Headwaters RA - Browns Canyon</td>
+      <td>0.124133</td>
+      <td>45.143670</td>
+      <td>0.173330</td>
+      <td>0.130786</td>
+    </tr>
+    <tr>
+      <td>Black Canyon Road</td>
+      <td>Orient Mine SWA</td>
+      <td>0.101166</td>
+      <td>40.464668</td>
+      <td>0.253782</td>
+      <td>0.150122</td>
+    </tr>
+    <tr>
+      <td>Black Canyon Trail</td>
+      <td>Orient Mine SWA</td>
+      <td>0.136057</td>
+      <td>35.743525</td>
+      <td>0.671328</td>
+      <td>0.728492</td>
+    </tr>
+    <tr>
+      <td>Flume Canyon (F1) Trail</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.750339</td>
+      <td>0.005688</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>BLM Route 8240</td>
+      <td>Garfield Creek SWA</td>
+      <td>0.000000</td>
+      <td>44.163627</td>
+      <td>0.094175</td>
+      <td>0.253363</td>
+    </tr>
+    <tr>
+      <td>BLM Route 8071</td>
+      <td>West Rifle Creek SWA</td>
+      <td>0.000000</td>
+      <td>44.716257</td>
+      <td>0.094175</td>
+      <td>0.253573</td>
+    </tr>
+    <tr>
+      <td>West Cedar Mountain Road</td>
+      <td>West Rifle Creek SWA</td>
+      <td>0.000000</td>
+      <td>43.767390</td>
+      <td>0.107409</td>
+      <td>0.260631</td>
+    </tr>
+    <tr>
+      <td>Whippoorwill Road</td>
+      <td>Hot Creek SWA - Poso Tract</td>
+      <td>0.000000</td>
+      <td>44.815122</td>
+      <td>0.136439</td>
+      <td>0.126664</td>
+    </tr>
+    <tr>
+      <td>Rock Gulch Road</td>
+      <td>Villa Grove STL</td>
+      <td>0.238423</td>
+      <td>39.883192</td>
+      <td>0.261991</td>
+      <td>0.408031</td>
+    </tr>
+    <tr>
+      <td>North Rock Creek Road</td>
+      <td>Rock Creek STL</td>
+      <td>0.072183</td>
+      <td>41.008735</td>
+      <td>0.257406</td>
+      <td>0.392593</td>
+    </tr>
+    <tr>
+      <td>BLM Route 8090B</td>
+      <td>West Rifle Creek SWA</td>
+      <td>0.000000</td>
+      <td>42.056327</td>
+      <td>0.134781</td>
+      <td>0.334878</td>
+    </tr>
+    <tr>
+      <td>BLM Route 8085A</td>
+      <td>West Rifle Creek SWA</td>
+      <td>0.000000</td>
+      <td>43.947339</td>
+      <td>0.106570</td>
+      <td>0.253379</td>
+    </tr>
+    <tr>
+      <td>Staunton Ranch Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.848612</td>
+      <td>39.834752</td>
+      <td>0.664613</td>
+      <td>0.738593</td>
+    </tr>
+    <tr>
+      <td>Poso Creek Road</td>
+      <td>Hot Creek SWA - Poso Tract</td>
+      <td>0.069291</td>
+      <td>44.447033</td>
+      <td>0.245416</td>
+      <td>0.209941</td>
+    </tr>
+    <tr>
+      <td>Whippoorwill Road</td>
+      <td>Hot Creek SWA - Poso Tract</td>
+      <td>0.219100</td>
+      <td>44.258031</td>
+      <td>0.259471</td>
+      <td>0.240837</td>
+    </tr>
+    <tr>
+      <td>Terrace Reservoir Road</td>
+      <td>Terrace Reservoir SWA</td>
+      <td>0.168110</td>
+      <td>43.452201</td>
+      <td>0.368192</td>
+      <td>0.254733</td>
+    </tr>
+    <tr>
+      <td>Pollock Bench (P1) Trail</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>52.078330</td>
+      <td>0.005688</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Escalante SWA - Upper Roubideau Tract</td>
+      <td>0.126378</td>
+      <td>46.824808</td>
+      <td>0.240596</td>
+      <td>0.186025</td>
+    </tr>
+    <tr>
+      <td>Lime Creek Road</td>
+      <td>Burro Springs STL</td>
+      <td>0.135541</td>
+      <td>39.484882</td>
+      <td>0.543313</td>
+      <td>0.563101</td>
+    </tr>
+    <tr>
+      <td>Sanderson Gulch Road</td>
+      <td>Burro Springs STL</td>
+      <td>0.050492</td>
+      <td>43.171346</td>
+      <td>0.257968</td>
+      <td>0.354264</td>
+    </tr>
+    <tr>
+      <td>Toltec Road</td>
+      <td>Oritz STL</td>
+      <td>0.022835</td>
+      <td>44.427998</td>
+      <td>0.236458</td>
+      <td>0.207791</td>
+    </tr>
+    <tr>
+      <td>Flume Canyon (F1) Trail</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.397983</td>
+      <td>0.005688</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>Arkansas Riverwalk Trail</td>
+      <td>Arkansas Headwaters RA - Centennial Park</td>
+      <td>0.000000</td>
+      <td>55.046792</td>
+      <td>0.019974</td>
+      <td>0.083225</td>
+    </tr>
+    <tr>
+      <td>Devils Flume Connector Trail</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.339554</td>
+      <td>0.005688</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>Inner Flume Canyon Trail</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.622028</td>
+      <td>0.005688</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Escalante SWA - Peach Orchard Point Tract</td>
+      <td>0.161836</td>
+      <td>46.560155</td>
+      <td>0.248863</td>
+      <td>0.267325</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Escalante SWA - Upper Roubideau Tract</td>
+      <td>0.164370</td>
+      <td>46.548247</td>
+      <td>0.263964</td>
+      <td>0.262843</td>
+    </tr>
+    <tr>
+      <td>BLM Route 8085</td>
+      <td>West Rifle Creek SWA</td>
+      <td>0.000000</td>
+      <td>43.696451</td>
+      <td>0.107409</td>
+      <td>0.260631</td>
+    </tr>
+    <tr>
+      <td>Hogback Coal Mine Road</td>
+      <td>West Rifle Creek SWA</td>
+      <td>0.000000</td>
+      <td>44.019621</td>
+      <td>0.101016</td>
+      <td>0.247768</td>
+    </tr>
+    <tr>
+      <td>Whippoorwill Road</td>
+      <td>Hot Creek SWA - Poso Tract</td>
+      <td>0.518499</td>
+      <td>43.406761</td>
+      <td>0.636121</td>
+      <td>0.426175</td>
+    </tr>
+    <tr>
+      <td>Swidinski Creek Road</td>
+      <td>Villa Grove STL</td>
+      <td>0.284500</td>
+      <td>38.202631</td>
+      <td>0.401638</td>
+      <td>0.481266</td>
+    </tr>
+    <tr>
+      <td>La Jara Reservoir Road</td>
+      <td>Rahadero Canyon STL</td>
+      <td>0.000000</td>
+      <td>44.838122</td>
+      <td>0.136439</td>
+      <td>0.128817</td>
+    </tr>
+    <tr>
+      <td>Red Rock Canyon Road</td>
+      <td>Burro Springs STL</td>
+      <td>0.068537</td>
+      <td>43.480094</td>
+      <td>0.270108</td>
+      <td>0.136984</td>
+    </tr>
+    <tr>
+      <td>Denca Trail</td>
+      <td>Escalante SWA - Upper Roubideau Tract</td>
+      <td>0.000000</td>
+      <td>47.566383</td>
+      <td>0.091985</td>
+      <td>0.114937</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Escalante SWA - Peach Orchard Point Tract</td>
+      <td>0.137145</td>
+      <td>46.652825</td>
+      <td>0.257522</td>
+      <td>0.258637</td>
+    </tr>
+    <tr>
+      <td>Denca Road</td>
+      <td>Escalante SWA - Upper Roubideau Tract</td>
+      <td>0.241339</td>
+      <td>46.577443</td>
+      <td>0.240596</td>
+      <td>0.198615</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Escalante SWA - Peach Orchard Point Tract</td>
+      <td>0.000000</td>
+      <td>48.197981</td>
+      <td>0.093759</td>
+      <td>0.116719</td>
+    </tr>
+    <tr>
+      <td>McCarty Trail</td>
+      <td>Escalante SWA - West Walker Tract</td>
+      <td>0.000000</td>
+      <td>48.016891</td>
+      <td>0.093759</td>
+      <td>0.109329</td>
+    </tr>
+    <tr>
+      <td>La Jara Reservoir Road</td>
+      <td>Rahadero Canyon STL</td>
+      <td>0.670150</td>
+      <td>43.345340</td>
+      <td>0.653095</td>
+      <td>0.488826</td>
+    </tr>
+    <tr>
+      <td>Dry Gulch Road</td>
+      <td>Burro Springs STL</td>
+      <td>0.043383</td>
+      <td>43.479002</td>
+      <td>0.277189</td>
+      <td>0.277083</td>
+    </tr>
+    <tr>
+      <td>Rio Grande Road</td>
+      <td>Punche Valley STL</td>
+      <td>0.000000</td>
+      <td>44.288468</td>
+      <td>0.160578</td>
+      <td>0.147661</td>
+    </tr>
+    <tr>
+      <td>Poso Hill Road</td>
+      <td>Hot Creek SWA</td>
+      <td>0.000000</td>
+      <td>44.927175</td>
+      <td>0.138231</td>
+      <td>0.126664</td>
+    </tr>
+    <tr>
+      <td>Poso Creek Road</td>
+      <td>Hot Creek SWA - Poso Tract</td>
+      <td>0.215945</td>
+      <td>44.379581</td>
+      <td>0.258564</td>
+      <td>0.244605</td>
+    </tr>
+    <tr>
+      <td>Stevens Creek Spur Road</td>
+      <td>Centennial SWA</td>
+      <td>0.563723</td>
+      <td>40.496933</td>
+      <td>0.578378</td>
+      <td>0.752072</td>
+    </tr>
+    <tr>
+      <td>Mesa Road</td>
+      <td>Steel Canyon STL</td>
+      <td>0.045570</td>
+      <td>42.625407</td>
+      <td>0.247490</td>
+      <td>0.153452</td>
+    </tr>
+    <tr>
+      <td>Steuben Creek Powerline Road</td>
+      <td>Gunnison SWA</td>
+      <td>0.499585</td>
+      <td>41.472117</td>
+      <td>0.574821</td>
+      <td>0.750156</td>
+    </tr>
+    <tr>
+      <td>Lime Creek Road</td>
+      <td>Burro Springs STL</td>
+      <td>0.102092</td>
+      <td>42.059043</td>
+      <td>0.355020</td>
+      <td>0.205214</td>
+    </tr>
+    <tr>
+      <td>Toltec Road</td>
+      <td>Oritz STL</td>
+      <td>0.109449</td>
+      <td>44.243822</td>
+      <td>0.275349</td>
+      <td>0.204190</td>
+    </tr>
+    <tr>
+      <td>The Shoulder Road</td>
+      <td>Piceance SWA - Yellow Creek Unit</td>
+      <td>0.000000</td>
+      <td>43.942040</td>
+      <td>0.125355</td>
+      <td>0.260118</td>
+    </tr>
+    <tr>
+      <td>BLM Trail 1258</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>44.122497</td>
+      <td>0.128695</td>
+      <td>0.260118</td>
+    </tr>
+    <tr>
+      <td>BLM Trail 1257</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>43.695795</td>
+      <td>0.127228</td>
+      <td>0.266300</td>
+    </tr>
+    <tr>
+      <td>Coal Creek Road</td>
+      <td>Elk Springs Ranch SWA</td>
+      <td>0.000000</td>
+      <td>42.570155</td>
+      <td>0.123216</td>
+      <td>0.310478</td>
+    </tr>
+    <tr>
+      <td>Littlt Corral Gulch Road</td>
+      <td>Piceance SWA - Little Hills Unit</td>
+      <td>0.000000</td>
+      <td>43.657665</td>
+      <td>0.111042</td>
+      <td>0.267788</td>
+    </tr>
+    <tr>
+      <td>BLM Route 1753</td>
+      <td>Rio Blanco Lake SWA</td>
+      <td>0.000000</td>
+      <td>45.071503</td>
+      <td>0.103082</td>
+      <td>0.249460</td>
+    </tr>
+    <tr>
+      <td>BLM Route 1268A</td>
+      <td>Collins Mountain Ranch SWA (Limited Access Easement)</td>
+      <td>0.000000</td>
+      <td>43.644463</td>
+      <td>0.107022</td>
+      <td>0.254882</td>
+    </tr>
+    <tr>
+      <td>Indian Valley Road</td>
+      <td>Citadel STL</td>
+      <td>0.000000</td>
+      <td>44.010406</td>
+      <td>0.107409</td>
+      <td>0.255955</td>
+    </tr>
+    <tr>
+      <td>Double Crosser Trail</td>
+      <td>Ridgway State Park</td>
+      <td>0.395747</td>
+      <td>45.617544</td>
+      <td>0.302606</td>
+      <td>0.304187</td>
+    </tr>
+    <tr>
+      <td>Cabin Creek Road</td>
+      <td>Van Tuyl SWA</td>
+      <td>0.326025</td>
+      <td>38.323408</td>
+      <td>0.625744</td>
+      <td>0.770068</td>
+    </tr>
+    <tr>
+      <td>Whippoorwill Road</td>
+      <td>Hot Creek SWA - Poso Tract</td>
+      <td>0.172047</td>
+      <td>43.223448</td>
+      <td>0.536781</td>
+      <td>0.467589</td>
+    </tr>
+    <tr>
+      <td>BLM Route 1154</td>
+      <td>Piceance SWA - North Ridge Unit</td>
+      <td>0.000000</td>
+      <td>44.214480</td>
+      <td>0.109910</td>
+      <td>0.248687</td>
+    </tr>
+    <tr>
+      <td>Dry Gulch Trail</td>
+      <td>Sapinero SWA</td>
+      <td>0.504886</td>
+      <td>40.643102</td>
+      <td>0.578378</td>
+      <td>0.749692</td>
+    </tr>
+    <tr>
+      <td>Schoolhouse Loop</td>
+      <td></td>
+      <td>0.032874</td>
+      <td>48.652850</td>
+      <td>0.049356</td>
+      <td>0.278618</td>
+    </tr>
+    <tr>
+      <td>Andrick Ponds SWA Trail</td>
+      <td>Andrick Ponds SWA</td>
+      <td>0.000000</td>
+      <td>46.428928</td>
+      <td>0.050209</td>
+      <td>0.122500</td>
+    </tr>
+    <tr>
+      <td>American Lakes Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>27.586132</td>
+      <td>0.438556</td>
+      <td>0.607110</td>
+    </tr>
+    <tr>
+      <td>Aspen Nature Trail</td>
+      <td>Vega State Park</td>
+      <td>1.293051</td>
+      <td>39.992390</td>
+      <td>0.557624</td>
+      <td>0.606940</td>
+    </tr>
+    <tr>
+      <td>Aspen Nature Trail</td>
+      <td>Vega State Park</td>
+      <td>1.740480</td>
+      <td>40.212463</td>
+      <td>0.646400</td>
+      <td>0.749710</td>
+    </tr>
+    <tr>
+      <td>Arthur's Rock Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>49.140290</td>
+      <td>0.019817</td>
+      <td>0.221432</td>
+    </tr>
+    <tr>
+      <td>Basalt SWA Trail</td>
+      <td>Basalt SWA</td>
+      <td>0.301128</td>
+      <td>43.239671</td>
+      <td>0.252772</td>
+      <td>0.302157</td>
+    </tr>
+    <tr>
+      <td>Beaver Lake SWA Road</td>
+      <td>Beaver Lake SWA</td>
+      <td>1.941082</td>
+      <td>36.469604</td>
+      <td>0.695030</td>
+      <td>0.768833</td>
+    </tr>
+    <tr>
+      <td>Beaver Brook Trail</td>
+      <td></td>
+      <td>0.101575</td>
+      <td>48.941920</td>
+      <td>0.049026</td>
+      <td>0.236789</td>
+    </tr>
+    <tr>
+      <td>Beaver Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.479486</td>
+      <td>39.537114</td>
+      <td>0.638750</td>
+      <td>0.718038</td>
+    </tr>
+    <tr>
+      <td>Bergen Peak Loop</td>
+      <td>Bergen Peak SWA</td>
+      <td>0.333673</td>
+      <td>41.138500</td>
+      <td>0.436126</td>
+      <td>0.423552</td>
+    </tr>
+    <tr>
+      <td>Bergen Peak Loop</td>
+      <td>Bergen Peak SWA</td>
+      <td>0.259187</td>
+      <td>40.896891</td>
+      <td>0.463388</td>
+      <td>0.439591</td>
+    </tr>
+    <tr>
+      <td>Bent Rock Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.006033</td>
+      <td>43.932874</td>
+      <td>0.169934</td>
+      <td>0.322437</td>
+    </tr>
+    <tr>
+      <td>Bent Rock Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>44.180870</td>
+      <td>0.111728</td>
+      <td>0.305839</td>
+    </tr>
+    <tr>
+      <td>Beaver Spur to Camp Shelter 1 Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.561133</td>
+      <td>39.532317</td>
+      <td>0.643351</td>
+      <td>0.718038</td>
+    </tr>
+    <tr>
+      <td>Black Bear Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.647224</td>
+      <td>39.139391</td>
+      <td>0.643351</td>
+      <td>0.722251</td>
+    </tr>
+    <tr>
+      <td>Big Thompson Ponds Trail</td>
+      <td>Big Thompson Ponds SWA</td>
+      <td>0.000000</td>
+      <td>50.467198</td>
+      <td>0.029207</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Bergen Peak Loop</td>
+      <td>Bergen Peak SWA</td>
+      <td>0.408158</td>
+      <td>41.380108</td>
+      <td>0.402876</td>
+      <td>0.400689</td>
+    </tr>
+    <tr>
+      <td>Bluebell Road</td>
+      <td></td>
+      <td>0.005948</td>
+      <td>50.506136</td>
+      <td>0.046025</td>
+      <td>0.267855</td>
+    </tr>
+    <tr>
+      <td>Burro to City Lights Ridge Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.765245</td>
+      <td>39.554594</td>
+      <td>0.599889</td>
+      <td>0.696681</td>
+    </tr>
+    <tr>
+      <td>Burro Spur to Windy Peak Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.903064</td>
+      <td>39.845764</td>
+      <td>0.638514</td>
+      <td>0.636391</td>
+    </tr>
+    <tr>
+      <td>Burro Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.696564</td>
+      <td>40.090433</td>
+      <td>0.594867</td>
+      <td>0.641089</td>
+    </tr>
+    <tr>
+      <td>Buffalo Bill Trail</td>
+      <td></td>
+      <td>0.114567</td>
+      <td>48.929747</td>
+      <td>0.068939</td>
+      <td>0.305087</td>
+    </tr>
+    <tr>
+      <td>Brower Stile Access Trail</td>
+      <td>Brower SWA</td>
+      <td>0.000000</td>
+      <td>49.274126</td>
+      <td>0.035496</td>
+      <td>0.103560</td>
+    </tr>
+    <tr>
+      <td>Button Rock Trail</td>
+      <td></td>
+      <td>0.069355</td>
+      <td>46.437746</td>
+      <td>0.149775</td>
+      <td>0.357068</td>
+    </tr>
+    <tr>
+      <td>Centennial Valley SWA (West) Trail</td>
+      <td>Centennial Valley SWA</td>
+      <td>0.000000</td>
+      <td>48.180293</td>
+      <td>0.031728</td>
+      <td>0.110065</td>
+    </tr>
+    <tr>
+      <td>Centennial Valley SWA (East) Trail</td>
+      <td>Centennial Valley SWA</td>
+      <td>0.000000</td>
+      <td>48.164730</td>
+      <td>0.031728</td>
+      <td>0.110065</td>
+    </tr>
+    <tr>
+      <td>Cedar Gulch Trail</td>
+      <td></td>
+      <td>0.046630</td>
+      <td>48.943127</td>
+      <td>0.039534</td>
+      <td>0.229465</td>
+    </tr>
+    <tr>
+      <td>Carpios Cove Trail</td>
+      <td>Trinidad Lake State Park</td>
+      <td>0.001364</td>
+      <td>49.679250</td>
+      <td>0.029630</td>
+      <td>0.134712</td>
+    </tr>
+    <tr>
+      <td>Carpenter Peak Trail</td>
+      <td>Roxborough State Park</td>
+      <td>0.521446</td>
+      <td>50.147900</td>
+      <td>0.047888</td>
+      <td>0.170443</td>
+    </tr>
+    <tr>
+      <td>Carpenter Peak Trail</td>
+      <td>Roxborough State Park</td>
+      <td>0.514016</td>
+      <td>50.203736</td>
+      <td>0.047888</td>
+      <td>0.170443</td>
+    </tr>
+    <tr>
+      <td>Clear Creek SWA Fishing Access Trail</td>
+      <td>Clear Creek Reservoir SWA</td>
+      <td>0.686292</td>
+      <td>37.685574</td>
+      <td>0.678423</td>
+      <td>0.741243</td>
+    </tr>
+    <tr>
+      <td>Cherry Creek Trail</td>
+      <td>Castlewood Canyon State Park</td>
+      <td>0.002756</td>
+      <td>49.251796</td>
+      <td>0.044307</td>
+      <td>0.172806</td>
+    </tr>
+    <tr>
+      <td>Chase Meadow Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.591933</td>
+      <td>40.556680</td>
+      <td>0.602075</td>
+      <td>0.606110</td>
+    </tr>
+    <tr>
+      <td>Cobalt Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>50.971955</td>
+      <td>0.023775</td>
+      <td>0.222227</td>
+    </tr>
+    <tr>
+      <td>Climbers Trail</td>
+      <td>Castlewood Canyon State Park</td>
+      <td>0.000394</td>
+      <td>49.241316</td>
+      <td>0.020730</td>
+      <td>0.143936</td>
+    </tr>
+    <tr>
+      <td>Climber Access Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.164346</td>
+      <td>39.279370</td>
+      <td>0.667208</td>
+      <td>0.752570</td>
+    </tr>
+    <tr>
+      <td>Climber Access Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.060326</td>
+      <td>39.720447</td>
+      <td>0.667208</td>
+      <td>0.745496</td>
+    </tr>
+    <tr>
+      <td>Cliff Base Trail</td>
+      <td>Castlewood Canyon State Park</td>
+      <td>0.000787</td>
+      <td>49.180050</td>
+      <td>0.033639</td>
+      <td>0.158338</td>
+    </tr>
+    <tr>
+      <td>Coyote Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.544398</td>
+      <td>37.408711</td>
+      <td>0.662353</td>
+      <td>0.726123</td>
+    </tr>
+    <tr>
+      <td>Creek Bottom Trail</td>
+      <td>Castlewood Canyon State Park</td>
+      <td>0.000000</td>
+      <td>48.738506</td>
+      <td>0.021130</td>
+      <td>0.127202</td>
+    </tr>
+    <tr>
+      <td>Dam Trail</td>
+      <td>Castlewood Canyon State Park</td>
+      <td>0.000000</td>
+      <td>48.312550</td>
+      <td>0.021450</td>
+      <td>0.127202</td>
+    </tr>
+    <tr>
+      <td>Dallas Creek Trail</td>
+      <td>Ridgway State Park</td>
+      <td>0.360362</td>
+      <td>45.331208</td>
+      <td>0.293828</td>
+      <td>0.311323</td>
+    </tr>
+    <tr>
+      <td>Cynical Trail</td>
+      <td></td>
+      <td>0.231321</td>
+      <td>47.045328</td>
+      <td>0.058448</td>
+      <td>0.144229</td>
+    </tr>
+    <tr>
+      <td>Davis Ponds Loops Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.579661</td>
+      <td>40.722326</td>
+      <td>0.497372</td>
+      <td>0.375109</td>
+    </tr>
+    <tr>
+      <td>Davis Ponds Loops Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.567805</td>
+      <td>40.849057</td>
+      <td>0.576883</td>
+      <td>0.344251</td>
+    </tr>
+    <tr>
+      <td>Davis Ponds Loops Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.572006</td>
+      <td>40.825318</td>
+      <td>0.576883</td>
+      <td>0.391590</td>
+    </tr>
+    <tr>
+      <td>Davis Ponds Loops Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.541572</td>
+      <td>40.836333</td>
+      <td>0.576883</td>
+      <td>0.344251</td>
+    </tr>
+    <tr>
+      <td>Dome View Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>40.224209</td>
+      <td>0.139735</td>
+      <td>0.415263</td>
+    </tr>
+    <tr>
+      <td>Dome Rock Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>39.443683</td>
+      <td>0.129037</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Black Bear Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.009479</td>
+      <td>38.782508</td>
+      <td>0.185256</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>North Hay Creek Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>38.740414</td>
+      <td>0.129037</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Cabin Creek Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>38.867507</td>
+      <td>0.129037</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Hay Creek Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>38.383510</td>
+      <td>0.129037</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>4 Mile Overlook Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.014218</td>
+      <td>38.284986</td>
+      <td>0.230289</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>4 Mile Overlook Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.002370</td>
+      <td>38.457975</td>
+      <td>0.158748</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Dome Rock Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>39.650745</td>
+      <td>0.129037</td>
+      <td>0.412454</td>
+    </tr>
+    <tr>
+      <td>Elliott SWA - Union Tract Blind Access Trail</td>
+      <td>Elliott SWA - Union Tract</td>
+      <td>0.000000</td>
+      <td>45.951957</td>
+      <td>0.050209</td>
+      <td>0.114313</td>
+    </tr>
+    <tr>
+      <td>Elk Valley Trail</td>
+      <td>Roxborough State Park</td>
+      <td>0.501942</td>
+      <td>49.933602</td>
+      <td>0.047888</td>
+      <td>0.170443</td>
+    </tr>
+    <tr>
+      <td>Elk Falls Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.846907</td>
+      <td>40.514814</td>
+      <td>0.616127</td>
+      <td>0.647324</td>
+    </tr>
+    <tr>
+      <td>Eldorado Canyon Trail</td>
+      <td>Eldorado Canyon State Park</td>
+      <td>0.079209</td>
+      <td>47.125212</td>
+      <td>0.090745</td>
+      <td>0.355616</td>
+    </tr>
+    <tr>
+      <td>Fat Man's Misery Trail</td>
+      <td>Escalante SWA - Lower Roubideau Tract</td>
+      <td>0.000000</td>
+      <td>50.627187</td>
+      <td>0.011763</td>
+      <td>0.080460</td>
+    </tr>
+    <tr>
+      <td>Enchanted Mesa Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>51.065936</td>
+      <td>0.025318</td>
+      <td>0.222227</td>
+    </tr>
+    <tr>
+      <td>Emerald Mountain SWA Trail</td>
+      <td>Emerald Mountain SWA</td>
+      <td>0.884234</td>
+      <td>39.596738</td>
+      <td>0.545127</td>
+      <td>0.525928</td>
+    </tr>
+    <tr>
+      <td>Emerald Mountain SWA Trail</td>
+      <td>Emerald Mountain SWA</td>
+      <td>0.941075</td>
+      <td>39.791603</td>
+      <td>0.539173</td>
+      <td>0.523826</td>
+    </tr>
+    <tr>
+      <td>Middle Drainage Trail</td>
+      <td>Emerald Mountain SWA</td>
+      <td>1.155579</td>
+      <td>40.216843</td>
+      <td>0.539750</td>
+      <td>0.536349</td>
+    </tr>
+    <tr>
+      <td>Yarmony Ranch SWA Fishing Access Trail</td>
+      <td>Yarmony Ranch SWA</td>
+      <td>2.278794</td>
+      <td>36.293897</td>
+      <td>0.667416</td>
+      <td>0.754534</td>
+    </tr>
+    <tr>
+      <td>Fisherman's Trail</td>
+      <td>Kemp Breeze SWA</td>
+      <td>0.210039</td>
+      <td>39.746455</td>
+      <td>0.405922</td>
+      <td>0.531547</td>
+    </tr>
+    <tr>
+      <td>Frantz Lake Loop</td>
+      <td>Frantz Lake SWA</td>
+      <td>0.000000</td>
+      <td>48.384337</td>
+      <td>0.015193</td>
+      <td>0.108402</td>
+    </tr>
+    <tr>
+      <td>Fowler East Trail</td>
+      <td>Eldorado Canyon State Park</td>
+      <td>0.031102</td>
+      <td>48.684147</td>
+      <td>0.044314</td>
+      <td>0.297584</td>
+    </tr>
+    <tr>
+      <td>Golden Eagle Trail</td>
+      <td></td>
+      <td>0.578237</td>
+      <td>49.533290</td>
+      <td>0.074308</td>
+      <td>0.169875</td>
+    </tr>
+    <tr>
+      <td>Golden Eagle Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.053955</td>
+      <td>38.320611</td>
+      <td>0.246402</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Gypsum Ponds SWA Trail</td>
+      <td>Gypsum Ponds SWA</td>
+      <td>0.000000</td>
+      <td>44.057358</td>
+      <td>0.127228</td>
+      <td>0.275517</td>
+    </tr>
+    <tr>
+      <td>Grouse Mountain Overlook Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.342059</td>
+      <td>38.223187</td>
+      <td>0.394618</td>
+      <td>0.482912</td>
+    </tr>
+    <tr>
+      <td>Homesteader Trail</td>
+      <td></td>
+      <td>0.615408</td>
+      <td>49.046406</td>
+      <td>0.077213</td>
+      <td>0.174816</td>
+    </tr>
+    <tr>
+      <td>Homestead Trail</td>
+      <td>Castlewood Canyon State Park</td>
+      <td>0.004724</td>
+      <td>49.201010</td>
+      <td>0.044307</td>
+      <td>0.177082</td>
+    </tr>
+    <tr>
+      <td>Hogback Nature Trail</td>
+      <td>Lathrop State Park</td>
+      <td>0.000000</td>
+      <td>51.107757</td>
+      <td>0.021130</td>
+      <td>0.104038</td>
+    </tr>
+    <tr>
+      <td>Horsethief Canyon SWA Trail</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.300131</td>
+      <td>0.005688</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>Horsethief Canyon SWA Trail</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.139532</td>
+      <td>0.005854</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>Horsethief Canyon SWA Trail</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.171569</td>
+      <td>0.005688</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>Horsethief Canyon SWA Trail</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.303455</td>
+      <td>0.005688</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>Horsethief Canyon SWA Trail</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.387362</td>
+      <td>0.005688</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>Horsethief Canyon SWA Road</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.235850</td>
+      <td>0.005688</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>Horsethief Canyon SWA Road</td>
+      <td>Horsethief Canyon SWA</td>
+      <td>0.000000</td>
+      <td>51.114328</td>
+      <td>0.005854</td>
+      <td>0.078007</td>
+    </tr>
+    <tr>
+      <td>Horseshoe Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.767046</td>
+      <td>37.795438</td>
+      <td>0.659456</td>
+      <td>0.719361</td>
+    </tr>
+    <tr>
+      <td>Horseshoe Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.771534</td>
+      <td>37.872569</td>
+      <td>0.659456</td>
+      <td>0.719361</td>
+    </tr>
+    <tr>
+      <td>Horseshoe Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.771534</td>
+      <td>37.872569</td>
+      <td>0.659456</td>
+      <td>0.719361</td>
+    </tr>
+    <tr>
+      <td>Horseshoe Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.672564</td>
+      <td>38.730337</td>
+      <td>0.643351</td>
+      <td>0.727780</td>
+    </tr>
+    <tr>
+      <td>Horseshoe Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.631059</td>
+      <td>39.396442</td>
+      <td>0.643351</td>
+      <td>0.718038</td>
+    </tr>
+    <tr>
+      <td>Hunter Loop Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.033465</td>
+      <td>50.658308</td>
+      <td>0.045578</td>
+      <td>0.296111</td>
+    </tr>
+    <tr>
+      <td>Hunter Loop Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.038189</td>
+      <td>50.637475</td>
+      <td>0.045578</td>
+      <td>0.296111</td>
+    </tr>
+    <tr>
+      <td>Horsetooth Rock Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.421605</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Horsetooth Falls Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.004528</td>
+      <td>49.130836</td>
+      <td>0.042994</td>
+      <td>0.281152</td>
+    </tr>
+    <tr>
+      <td>Island Mesa Trail</td>
+      <td>Dry Creek Basin SWA</td>
+      <td>0.056689</td>
+      <td>42.681927</td>
+      <td>0.221647</td>
+      <td>0.154968</td>
+    </tr>
+    <tr>
+      <td>Island Mesa Trail</td>
+      <td>Jim Olterman/Lone Cone SWA</td>
+      <td>0.567629</td>
+      <td>39.761059</td>
+      <td>0.678823</td>
+      <td>0.571237</td>
+    </tr>
+    <tr>
+      <td>Inner Canyon Trail</td>
+      <td>Castlewood Canyon State Park</td>
+      <td>0.000000</td>
+      <td>48.048649</td>
+      <td>0.027360</td>
+      <td>0.132107</td>
+    </tr>
+    <tr>
+      <td>Indian Run SWA Trail</td>
+      <td>Indian Run SWA</td>
+      <td>0.000000</td>
+      <td>42.417269</td>
+      <td>0.120150</td>
+      <td>0.317206</td>
+    </tr>
+    <tr>
+      <td>Indian Run Trail</td>
+      <td>Indian Run SWA</td>
+      <td>0.000000</td>
+      <td>42.386948</td>
+      <td>0.116246</td>
+      <td>0.317206</td>
+    </tr>
+    <tr>
+      <td>Jim Olterman - Lone Cone SWA Trail</td>
+      <td>Jim Olterman/Lone Cone SWA</td>
+      <td>0.087055</td>
+      <td>39.449017</td>
+      <td>0.554686</td>
+      <td>0.317218</td>
+    </tr>
+    <tr>
+      <td>Kruger Rock Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.246850</td>
+      <td>39.091348</td>
+      <td>0.477989</td>
+      <td>0.721321</td>
+    </tr>
+    <tr>
+      <td>Levsa Nature Trail</td>
+      <td>Trinidad Lake State Park</td>
+      <td>0.003097</td>
+      <td>49.651799</td>
+      <td>0.037421</td>
+      <td>0.143606</td>
+    </tr>
+    <tr>
+      <td>Lake Gulch Trail</td>
+      <td>Castlewood Canyon State Park</td>
+      <td>0.000000</td>
+      <td>48.048649</td>
+      <td>0.027360</td>
+      <td>0.132107</td>
+    </tr>
+    <tr>
+      <td>Lichen Loop</td>
+      <td></td>
+      <td>0.025787</td>
+      <td>48.409568</td>
+      <td>0.042796</td>
+      <td>0.267693</td>
+    </tr>
+    <tr>
+      <td>Lone Eagle Overlook Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.025155</td>
+      <td>37.971700</td>
+      <td>0.249121</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Lone Cone Trail</td>
+      <td>Jim Olterman/Lone Cone SWA</td>
+      <td>0.055923</td>
+      <td>41.220638</td>
+      <td>0.510269</td>
+      <td>0.313848</td>
+    </tr>
+    <tr>
+      <td>Lone Cone SWA Trail</td>
+      <td>Jim Olterman/Lone Cone SWA</td>
+      <td>0.042686</td>
+      <td>40.969430</td>
+      <td>0.643950</td>
+      <td>0.457548</td>
+    </tr>
+    <tr>
+      <td>Lon Hagler Reservoir Loop</td>
+      <td>Lon Hagler SWA</td>
+      <td>0.000000</td>
+      <td>51.275937</td>
+      <td>0.019907</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Lon Hagler Reservoir Loop</td>
+      <td>Lon Hagler SWA</td>
+      <td>0.017323</td>
+      <td>51.255997</td>
+      <td>0.043084</td>
+      <td>0.263338</td>
+    </tr>
+    <tr>
+      <td>Lon Hagler Nature Trail</td>
+      <td>Lon Hagler SWA</td>
+      <td>0.000000</td>
+      <td>51.288392</td>
+      <td>0.019907</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Lower Roubideau Trail</td>
+      <td>Escalante SWA - Lower Roubideau Tract</td>
+      <td>0.000000</td>
+      <td>50.627187</td>
+      <td>0.011763</td>
+      <td>0.080460</td>
+    </tr>
+    <tr>
+      <td>Meadowlark Trail</td>
+      <td></td>
+      <td>0.421680</td>
+      <td>50.281365</td>
+      <td>0.049286</td>
+      <td>0.149973</td>
+    </tr>
+    <tr>
+      <td>McClintock Lower Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>51.065936</td>
+      <td>0.025318</td>
+      <td>0.222227</td>
+    </tr>
+    <tr>
+      <td>Marshall Mesa Trail</td>
+      <td></td>
+      <td>0.017717</td>
+      <td>51.923731</td>
+      <td>0.043204</td>
+      <td>0.262157</td>
+    </tr>
+    <tr>
+      <td>Mitani-Tokuyasu Field Access Trail</td>
+      <td>Mitani-Tokuyasu SWA</td>
+      <td>0.000000</td>
+      <td>48.333959</td>
+      <td>0.031728</td>
+      <td>0.112370</td>
+    </tr>
+    <tr>
+      <td>Mount Shavano SWA Trail</td>
+      <td>Mount Shavano SWA</td>
+      <td>0.000000</td>
+      <td>48.808756</td>
+      <td>0.014524</td>
+      <td>0.108402</td>
+    </tr>
+    <tr>
+      <td>Mount Ouray SWA Trail</td>
+      <td>Mount Ouray SWA</td>
+      <td>0.000000</td>
+      <td>48.335447</td>
+      <td>0.051715</td>
+      <td>0.108011</td>
+    </tr>
+    <tr>
+      <td>Mount Ouray SWA Trail</td>
+      <td>Mount Ouray SWA</td>
+      <td>0.000000</td>
+      <td>48.287610</td>
+      <td>0.056234</td>
+      <td>0.111633</td>
+    </tr>
+    <tr>
+      <td>Mount Galbraith Loop</td>
+      <td></td>
+      <td>0.075394</td>
+      <td>48.835820</td>
+      <td>0.039534</td>
+      <td>0.181432</td>
+    </tr>
+    <tr>
+      <td>Morrison Loop</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.855754</td>
+      <td>0.019907</td>
+      <td>0.212622</td>
+    </tr>
+    <tr>
+      <td>Morrison Creek Trail</td>
+      <td>Jim Olterman/Lone Cone SWA</td>
+      <td>0.935773</td>
+      <td>38.975716</td>
+      <td>0.684112</td>
+      <td>0.573618</td>
+    </tr>
+    <tr>
+      <td>Morrison Creek Trail</td>
+      <td>Jim Olterman/Lone Cone SWA</td>
+      <td>0.004739</td>
+      <td>41.710585</td>
+      <td>0.166034</td>
+      <td>0.171520</td>
+    </tr>
+    <tr>
+      <td>Mountain View Nature Trail</td>
+      <td>State Forest State Park</td>
+      <td>1.084711</td>
+      <td>33.800571</td>
+      <td>0.688367</td>
+      <td>0.761608</td>
+    </tr>
+    <tr>
+      <td>Mountain Lion/Burro Connector Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.606202</td>
+      <td>40.714331</td>
+      <td>0.488137</td>
+      <td>0.585807</td>
+    </tr>
+    <tr>
+      <td>Nakagawa SWA Field Access Trail</td>
+      <td>Nakagawa SWA</td>
+      <td>0.000000</td>
+      <td>48.161901</td>
+      <td>0.031728</td>
+      <td>0.112370</td>
+    </tr>
+    <tr>
+      <td>Nighthawk Trail</td>
+      <td></td>
+      <td>0.030906</td>
+      <td>48.142013</td>
+      <td>0.044529</td>
+      <td>0.296236</td>
+    </tr>
+    <tr>
+      <td>Nightbird Gulch Trail</td>
+      <td></td>
+      <td>0.046384</td>
+      <td>49.981198</td>
+      <td>0.056647</td>
+      <td>0.278086</td>
+    </tr>
+    <tr>
+      <td>Old Mill Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.005252</td>
+      <td>39.663598</td>
+      <td>0.667208</td>
+      <td>0.745496</td>
+    </tr>
+    <tr>
+      <td>Oak Ridge Horse Trail</td>
+      <td>Oak Ridge SWA</td>
+      <td>0.000000</td>
+      <td>43.879612</td>
+      <td>0.107022</td>
+      <td>0.254882</td>
+    </tr>
+    <tr>
+      <td>Parkdale South Fishing Access Trail</td>
+      <td>Arkansas Headwaters RA - Copper Gulch</td>
+      <td>0.000000</td>
+      <td>51.227510</td>
+      <td>0.021220</td>
+      <td>0.101190</td>
+    </tr>
+    <tr>
+      <td>Parkdale South Fishing Access Trail</td>
+      <td>Arkansas Headwaters RA - Copper Gulch</td>
+      <td>0.000000</td>
+      <td>51.227510</td>
+      <td>0.021220</td>
+      <td>0.101190</td>
+    </tr>
+    <tr>
+      <td>Parachute Ponds Loop</td>
+      <td>Parachute Ponds SWA</td>
+      <td>0.000000</td>
+      <td>48.845048</td>
+      <td>0.086627</td>
+      <td>0.135854</td>
+    </tr>
+    <tr>
+      <td>Owl Mountain SWA Trail</td>
+      <td>Owl Mountain SWA</td>
+      <td>0.523539</td>
+      <td>35.156733</td>
+      <td>0.594190</td>
+      <td>0.705021</td>
+    </tr>
+    <tr>
+      <td>Overlook Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>49.256301</td>
+      <td>0.019817</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>Outlook Ridge Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.129419</td>
+      <td>37.916252</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Outlook Ridge Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.077287</td>
+      <td>37.943976</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>OT Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>47.658606</td>
+      <td>0.019817</td>
+      <td>0.242613</td>
+    </tr>
+    <tr>
+      <td>Peak View Pond Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.315710</td>
+      <td>37.760657</td>
+      <td>0.260923</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Pueblo Reservoir South Access Trail</td>
+      <td>Lake Pueblo SWAA</td>
+      <td>0.000000</td>
+      <td>54.492629</td>
+      <td>0.021220</td>
+      <td>0.173822</td>
+    </tr>
+    <tr>
+      <td>Pueblo Res Access Northeast Trail</td>
+      <td>Lake Pueblo State Park</td>
+      <td>0.000000</td>
+      <td>54.223843</td>
+      <td>0.021220</td>
+      <td>0.176578</td>
+    </tr>
+    <tr>
+      <td>Red Lion SWA Trail</td>
+      <td>Red Lion SWA</td>
+      <td>0.010000</td>
+      <td>45.423581</td>
+      <td>0.043566</td>
+      <td>0.141882</td>
+    </tr>
+    <tr>
+      <td>Raven Ridge Overlook Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.129419</td>
+      <td>37.916252</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Radium SWA - Blacktail Loop</td>
+      <td>Radium SWA - Blacktail Unit</td>
+      <td>0.858699</td>
+      <td>34.763931</td>
+      <td>0.688367</td>
+      <td>0.761608</td>
+    </tr>
+    <tr>
+      <td>Radium SWA - Blacktail Loop</td>
+      <td>Radium SWA - Blacktail Unit</td>
+      <td>0.494488</td>
+      <td>36.415303</td>
+      <td>0.538980</td>
+      <td>0.730839</td>
+    </tr>
+    <tr>
+      <td>Rimrock Trail</td>
+      <td>Castlewood Canyon State Park</td>
+      <td>0.000000</td>
+      <td>48.865619</td>
+      <td>0.021130</td>
+      <td>0.127202</td>
+    </tr>
+    <tr>
+      <td>Revenuer's Ridge Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.276702</td>
+      <td>37.775799</td>
+      <td>0.260923</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Revenuer's Ridge Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.220195</td>
+      <td>37.873672</td>
+      <td>0.265854</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Red Tail Overlook Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.025155</td>
+      <td>37.971700</td>
+      <td>0.249121</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Rock Canyon Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.012577</td>
+      <td>38.025720</td>
+      <td>0.213137</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Sawhill Ponds Trail</td>
+      <td>Sawhill Ponds</td>
+      <td>0.000000</td>
+      <td>52.248194</td>
+      <td>0.021540</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Sands Lake Loop</td>
+      <td>Sands Lake SWA</td>
+      <td>0.000000</td>
+      <td>48.950229</td>
+      <td>0.010491</td>
+      <td>0.107565</td>
+    </tr>
+    <tr>
+      <td>Scout Line Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.244466</td>
+      <td>39.890993</td>
+      <td>0.667208</td>
+      <td>0.745496</td>
+    </tr>
+    <tr>
+      <td>Sawhill Ponds Trail</td>
+      <td>Sawhill Ponds</td>
+      <td>0.000000</td>
+      <td>52.246847</td>
+      <td>0.021540</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Shriver and Wright SWA Trail</td>
+      <td>Shriver and Wright SWA</td>
+      <td>0.000000</td>
+      <td>42.597101</td>
+      <td>0.150311</td>
+      <td>0.156524</td>
+    </tr>
+    <tr>
+      <td>Spring Creek Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>40.149641</td>
+      <td>0.136352</td>
+      <td>0.415263</td>
+    </tr>
+    <tr>
+      <td>Spanish Peaks SWA - Sakariason Tract South Trail</td>
+      <td>Spanish Peaks SWA - Sakariason Tract</td>
+      <td>0.010000</td>
+      <td>45.987929</td>
+      <td>0.102043</td>
+      <td>0.111429</td>
+    </tr>
+    <tr>
+      <td>Spanish Peaks SWA - Sakariason Tract North Trail</td>
+      <td>Spanish Peaks SWA - Sakariason Tract</td>
+      <td>0.010000</td>
+      <td>46.167725</td>
+      <td>0.104054</td>
+      <td>0.113121</td>
+    </tr>
+    <tr>
+      <td>Spanish Peaks SWA - Oberosler Tract Northwest Road</td>
+      <td>Spanish Peaks SWA - Oberosler Tract</td>
+      <td>0.010000</td>
+      <td>45.599815</td>
+      <td>0.102403</td>
+      <td>0.111429</td>
+    </tr>
+    <tr>
+      <td>Spanish Peaks SWA - Oberosler Tract Northeast Trail</td>
+      <td>Spanish Peaks SWA - Oberosler Tract</td>
+      <td>0.010000</td>
+      <td>45.826212</td>
+      <td>0.102043</td>
+      <td>0.111429</td>
+    </tr>
+    <tr>
+      <td>Spanish Peaks SWA - Dochter Tract Trail</td>
+      <td>Spanish Peaks SWA - Dochter Tract</td>
+      <td>0.010000</td>
+      <td>45.446522</td>
+      <td>0.108235</td>
+      <td>0.111429</td>
+    </tr>
+    <tr>
+      <td>South Rim Trail</td>
+      <td>Roxborough State Park</td>
+      <td>0.337510</td>
+      <td>51.315340</td>
+      <td>0.047888</td>
+      <td>0.158030</td>
+    </tr>
+    <tr>
+      <td>Elk Range Trail</td>
+      <td></td>
+      <td>0.016142</td>
+      <td>44.126048</td>
+      <td>0.202065</td>
+      <td>0.346613</td>
+    </tr>
+    <tr>
+      <td>Ten Trail</td>
+      <td>Lake Pueblo SWAA</td>
+      <td>0.000000</td>
+      <td>54.541812</td>
+      <td>0.021220</td>
+      <td>0.080468</td>
+    </tr>
+    <tr>
+      <td>Tamarack Ranch SWA Trail</td>
+      <td>Tamarack Ranch SWA</td>
+      <td>0.000000</td>
+      <td>45.385034</td>
+      <td>0.044078</td>
+      <td>0.127667</td>
+    </tr>
+    <tr>
+      <td>Swallowtail Connector Trail</td>
+      <td>Roxborough State Park</td>
+      <td>0.379026</td>
+      <td>50.905092</td>
+      <td>0.047888</td>
+      <td>0.166840</td>
+    </tr>
+    <tr>
+      <td>Sunshine Trail</td>
+      <td></td>
+      <td>0.231321</td>
+      <td>47.045328</td>
+      <td>0.058448</td>
+      <td>0.148231</td>
+    </tr>
+    <tr>
+      <td>Toner Trail</td>
+      <td>Basalt SWA</td>
+      <td>0.635472</td>
+      <td>40.022002</td>
+      <td>0.654659</td>
+      <td>0.718038</td>
+    </tr>
+    <tr>
+      <td>Tombstone Nature Trail</td>
+      <td>Steamboat Lake State Park</td>
+      <td>0.890391</td>
+      <td>35.355548</td>
+      <td>0.656991</td>
+      <td>0.723644</td>
+    </tr>
+    <tr>
+      <td>Three Bar Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>47.361747</td>
+      <td>0.020178</td>
+      <td>0.240627</td>
+    </tr>
+    <tr>
+      <td>Turkey Cabin Overlook Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.108457</td>
+      <td>37.986161</td>
+      <td>0.261253</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Wapiti Nature Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.174807</td>
+      <td>37.908605</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Walt Woodward Trail</td>
+      <td>Radium SWA - Blacktail Unit</td>
+      <td>0.621063</td>
+      <td>40.551155</td>
+      <td>0.428520</td>
+      <td>0.534428</td>
+    </tr>
+    <tr>
+      <td>Visitor Center Nature Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.528596</td>
+      <td>39.750819</td>
+      <td>0.648424</td>
+      <td>0.693822</td>
+    </tr>
+    <tr>
+      <td>West Brush Creek Trail</td>
+      <td>Brush Creek SWA</td>
+      <td>1.697800</td>
+      <td>38.364057</td>
+      <td>0.693315</td>
+      <td>0.768833</td>
+    </tr>
+    <tr>
+      <td>West Brush Creek Trail</td>
+      <td>Brush Creek SWA</td>
+      <td>1.019216</td>
+      <td>36.596759</td>
+      <td>0.704143</td>
+      <td>0.770027</td>
+    </tr>
+    <tr>
+      <td>West Brush Creek Trail</td>
+      <td>Sylvan Lake State Park</td>
+      <td>1.183395</td>
+      <td>39.488621</td>
+      <td>0.651318</td>
+      <td>0.749710</td>
+    </tr>
+    <tr>
+      <td>West Brush Creek Trail</td>
+      <td>Sylvan Lake State Park</td>
+      <td>1.825980</td>
+      <td>38.998784</td>
+      <td>0.665402</td>
+      <td>0.756472</td>
+    </tr>
+    <tr>
+      <td>West Brush Creek Trail</td>
+      <td>Sylvan Lake State Park</td>
+      <td>0.935712</td>
+      <td>35.622292</td>
+      <td>0.699542</td>
+      <td>0.770027</td>
+    </tr>
+    <tr>
+      <td>Well Gulch Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>48.683099</td>
+      <td>0.019817</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>Well Gulch Nature Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>49.151089</td>
+      <td>0.019817</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>Watson Lake River Trail</td>
+      <td>Watson Lake SWA</td>
+      <td>0.000000</td>
+      <td>49.707289</td>
+      <td>0.019907</td>
+      <td>0.234122</td>
+    </tr>
+    <tr>
+      <td>Warparty Overlook Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>39.427913</td>
+      <td>0.129037</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Willow Creek Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.000000</td>
+      <td>38.799486</td>
+      <td>0.129037</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Willow Creek Trail</td>
+      <td>Roxborough State Park</td>
+      <td>0.371093</td>
+      <td>50.983067</td>
+      <td>0.047888</td>
+      <td>0.170663</td>
+    </tr>
+    <tr>
+      <td>Williams Creek Reservoir SWA Trail</td>
+      <td>Williams Creek Reservoir SWA</td>
+      <td>0.355455</td>
+      <td>43.174722</td>
+      <td>0.556737</td>
+      <td>0.312963</td>
+    </tr>
+    <tr>
+      <td>Yampa River SWA Trail</td>
+      <td>Yampa River SWA</td>
+      <td>0.000000</td>
+      <td>42.454432</td>
+      <td>0.132827</td>
+      <td>0.332784</td>
+    </tr>
+    <tr>
+      <td>Yampa River SWA Trail</td>
+      <td>Yampa River SWA</td>
+      <td>0.000000</td>
+      <td>42.465970</td>
+      <td>0.132827</td>
+      <td>0.332784</td>
+    </tr>
+    <tr>
+      <td>4 Mile Overlook Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.029529</td>
+      <td>38.071846</td>
+      <td>0.249121</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>American Lakes Via Crags Campground Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>26.617716</td>
+      <td>0.442447</td>
+      <td>0.602578</td>
+    </tr>
+    <tr>
+      <td>American Lakes Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>25.595272</td>
+      <td>0.442447</td>
+      <td>0.604428</td>
+    </tr>
+    <tr>
+      <td>American Lakes Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>24.719397</td>
+      <td>0.442447</td>
+      <td>0.604428</td>
+    </tr>
+    <tr>
+      <td>American Lakes Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>25.872698</td>
+      <td>0.442447</td>
+      <td>0.604428</td>
+    </tr>
+    <tr>
+      <td>Antelope Trail</td>
+      <td></td>
+      <td>0.021260</td>
+      <td>48.621534</td>
+      <td>0.047212</td>
+      <td>0.275606</td>
+    </tr>
+    <tr>
+      <td>Aspen Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.088588</td>
+      <td>37.754272</td>
+      <td>0.256322</td>
+      <td>0.424017</td>
+    </tr>
+    <tr>
+      <td>Arkansas River Trail</td>
+      <td>Arkansas Headwaters RA - BLM Site</td>
+      <td>0.380420</td>
+      <td>43.975348</td>
+      <td>0.256467</td>
+      <td>0.275860</td>
+    </tr>
+    <tr>
+      <td>Arkansas River Trail</td>
+      <td>Arkansas Headwaters RA - BLM Site</td>
+      <td>0.345604</td>
+      <td>43.943933</td>
+      <td>0.279100</td>
+      <td>0.278736</td>
+    </tr>
+    <tr>
+      <td>Audra Culver Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.628913</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Bear Paw Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.231599</td>
+      <td>39.379654</td>
+      <td>0.667208</td>
+      <td>0.752570</td>
+    </tr>
+    <tr>
+      <td>Beaver Ponds Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.133065</td>
+      <td>37.920087</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Beaver Lodge Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.375743</td>
+      <td>34.343964</td>
+      <td>0.661177</td>
+      <td>0.762843</td>
+    </tr>
+    <tr>
+      <td>Beaver Lodge Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.211453</td>
+      <td>33.653480</td>
+      <td>0.681671</td>
+      <td>0.748443</td>
+    </tr>
+    <tr>
+      <td>Bearberry Trail</td>
+      <td></td>
+      <td>0.079908</td>
+      <td>45.920092</td>
+      <td>0.220074</td>
+      <td>0.349181</td>
+    </tr>
+    <tr>
+      <td>Bergen Peak Trail</td>
+      <td>Bergen Peak SWA</td>
+      <td>0.752532</td>
+      <td>41.614575</td>
+      <td>0.449846</td>
+      <td>0.421392</td>
+    </tr>
+    <tr>
+      <td>Besant Point Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.008778</td>
+      <td>46.631353</td>
+      <td>0.068007</td>
+      <td>0.339989</td>
+    </tr>
+    <tr>
+      <td>Besant Point Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.003208</td>
+      <td>46.525733</td>
+      <td>0.067832</td>
+      <td>0.312439</td>
+    </tr>
+    <tr>
+      <td>Bitterbrush Trail</td>
+      <td></td>
+      <td>0.037008</td>
+      <td>48.402907</td>
+      <td>0.053996</td>
+      <td>0.276329</td>
+    </tr>
+    <tr>
+      <td>Blackmer Loop</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>49.955837</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Black Bear Trail</td>
+      <td>Mancos State Park</td>
+      <td>0.000000</td>
+      <td>45.126140</td>
+      <td>0.120116</td>
+      <td>0.121340</td>
+    </tr>
+    <tr>
+      <td>Black Bear Trail</td>
+      <td>Mancos State Park</td>
+      <td>0.000000</td>
+      <td>45.126140</td>
+      <td>0.120116</td>
+      <td>0.121340</td>
+    </tr>
+    <tr>
+      <td>Black Bear Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.204883</td>
+      <td>38.100557</td>
+      <td>0.265854</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Black Bear Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.276702</td>
+      <td>37.746820</td>
+      <td>0.265854</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Big Meadows Loop</td>
+      <td>Big Meadows Reservoir SWA</td>
+      <td>1.639678</td>
+      <td>38.635465</td>
+      <td>0.697243</td>
+      <td>0.576514</td>
+    </tr>
+    <tr>
+      <td>Tombstone Nature Trail</td>
+      <td>Steamboat Lake State Park</td>
+      <td>0.898488</td>
+      <td>35.400117</td>
+      <td>0.683648</td>
+      <td>0.757226</td>
+    </tr>
+    <tr>
+      <td>Blue Heron Trail</td>
+      <td>Arkansas Headwaters RA - Blue Heron</td>
+      <td>0.000000</td>
+      <td>53.850423</td>
+      <td>0.021220</td>
+      <td>0.083225</td>
+    </tr>
+    <tr>
+      <td>Blue Heron Trail</td>
+      <td>Arkansas Headwaters RA - Blue Heron</td>
+      <td>0.000000</td>
+      <td>53.764890</td>
+      <td>0.021220</td>
+      <td>0.083225</td>
+    </tr>
+    <tr>
+      <td>Blue Grouse Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.452889</td>
+      <td>38.175235</td>
+      <td>0.652475</td>
+      <td>0.719361</td>
+    </tr>
+    <tr>
+      <td>Bockman Campground Horse Spur Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.258072</td>
+      <td>31.199141</td>
+      <td>0.653154</td>
+      <td>0.741314</td>
+    </tr>
+    <tr>
+      <td>Bobcat Way Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.743784</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Boulder Run Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.536229</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Borderline Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.232659</td>
+      <td>38.849864</td>
+      <td>0.667208</td>
+      <td>0.745496</td>
+    </tr>
+    <tr>
+      <td>Brothers Trail</td>
+      <td></td>
+      <td>0.095533</td>
+      <td>46.072921</td>
+      <td>0.216555</td>
+      <td>0.342353</td>
+    </tr>
+    <tr>
+      <td>Buffalo Rock Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.080933</td>
+      <td>38.613019</td>
+      <td>0.254234</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Buffalo Rock Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.259021</td>
+      <td>38.842077</td>
+      <td>0.258835</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Buffalo Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.895142</td>
+      <td>38.738497</td>
+      <td>0.659993</td>
+      <td>0.718038</td>
+    </tr>
+    <tr>
+      <td>Buffalo Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.835588</td>
+      <td>39.215969</td>
+      <td>0.609800</td>
+      <td>0.721321</td>
+    </tr>
+    <tr>
+      <td>Burro Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.668415</td>
+      <td>40.109028</td>
+      <td>0.594867</td>
+      <td>0.641089</td>
+    </tr>
+    <tr>
+      <td>Burro Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.680524</td>
+      <td>39.926222</td>
+      <td>0.599889</td>
+      <td>0.642430</td>
+    </tr>
+    <tr>
+      <td>Cahill Pond Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.098432</td>
+      <td>38.152333</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Carey Springs Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.516079</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Chatfield Equestrian Loop</td>
+      <td>Chatfield State Park</td>
+      <td>0.161865</td>
+      <td>52.737368</td>
+      <td>0.026700</td>
+      <td>0.103560</td>
+    </tr>
+    <tr>
+      <td>Chatfield Equestrian Loop</td>
+      <td>Chatfield State Park</td>
+      <td>0.141085</td>
+      <td>52.835919</td>
+      <td>0.026700</td>
+      <td>0.103560</td>
+    </tr>
+    <tr>
+      <td>Cheesman Ranch Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.231132</td>
+      <td>38.648452</td>
+      <td>0.258835</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Chimney Rock Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.086380</td>
+      <td>40.478985</td>
+      <td>0.618857</td>
+      <td>0.698337</td>
+    </tr>
+    <tr>
+      <td>Chimney Gulch Trail</td>
+      <td></td>
+      <td>0.035610</td>
+      <td>51.096372</td>
+      <td>0.060152</td>
+      <td>0.284123</td>
+    </tr>
+    <tr>
+      <td>Cheyenne Rim Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.004933</td>
+      <td>42.139487</td>
+      <td>0.229870</td>
+      <td>0.329443</td>
+    </tr>
+    <tr>
+      <td>Clark Peak Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.000000</td>
+      <td>22.655654</td>
+      <td>0.178693</td>
+      <td>0.455460</td>
+    </tr>
+    <tr>
+      <td>Clear Lake Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.011645</td>
+      <td>27.130799</td>
+      <td>0.316928</td>
+      <td>0.489815</td>
+    </tr>
+    <tr>
+      <td>Clear Lake Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.905044</td>
+      <td>33.426177</td>
+      <td>0.688367</td>
+      <td>0.761608</td>
+    </tr>
+    <tr>
+      <td>Clear Lake Trail</td>
+      <td>State Forest State Park</td>
+      <td>1.733571</td>
+      <td>33.722251</td>
+      <td>0.681862</td>
+      <td>0.761608</td>
+    </tr>
+    <tr>
+      <td>Fistful of Dollars Trail</td>
+      <td>Arkansas Headwaters RA - Collegiate Peaks (R&amp;PP Site)</td>
+      <td>0.227122</td>
+      <td>44.116729</td>
+      <td>0.265532</td>
+      <td>0.273925</td>
+    </tr>
+    <tr>
+      <td>Cone Flower Trail</td>
+      <td></td>
+      <td>0.078027</td>
+      <td>45.968924</td>
+      <td>0.220074</td>
+      <td>0.341929</td>
+    </tr>
+    <tr>
+      <td>Cottonwood Creek Trail</td>
+      <td>Cottonwood Creek SWA</td>
+      <td>0.358181</td>
+      <td>44.334312</td>
+      <td>0.223534</td>
+      <td>0.260001</td>
+    </tr>
+    <tr>
+      <td>Cottonwood Creek Trail</td>
+      <td>Arkansas Headwaters RA - Town of Buena</td>
+      <td>0.335396</td>
+      <td>44.184935</td>
+      <td>0.246277</td>
+      <td>0.263837</td>
+    </tr>
+    <tr>
+      <td>Cougar's Shadow Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>49.661782</td>
+      <td>0.021130</td>
+      <td>0.207001</td>
+    </tr>
+    <tr>
+      <td>Coyote Run Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.828444</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Custer Draw Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.354345</td>
+      <td>33.963316</td>
+      <td>0.686486</td>
+      <td>0.754534</td>
+    </tr>
+    <tr>
+      <td>Dancing Moose Yurt Access Road</td>
+      <td>State Forest State Park</td>
+      <td>0.092263</td>
+      <td>31.247008</td>
+      <td>0.443732</td>
+      <td>0.610261</td>
+    </tr>
+    <tr>
+      <td>Dog Off-Leash Area Trails</td>
+      <td>Chatfield State Park</td>
+      <td>0.081662</td>
+      <td>53.269740</td>
+      <td>0.026700</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Droney Gulch Access Trail</td>
+      <td>Arkansas Headwaters RA - Big Bend (R&amp;PP Site)</td>
+      <td>0.000000</td>
+      <td>48.226110</td>
+      <td>0.051715</td>
+      <td>0.203728</td>
+    </tr>
+    <tr>
+      <td>Dynamite Cabin Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.348621</td>
+      <td>38.532494</td>
+      <td>0.387600</td>
+      <td>0.482912</td>
+    </tr>
+    <tr>
+      <td>East Bluffs Loop</td>
+      <td>Highline Lake State Park</td>
+      <td>0.000000</td>
+      <td>50.949676</td>
+      <td>0.005688</td>
+      <td>0.074362</td>
+    </tr>
+    <tr>
+      <td>Eagle Wind Trail</td>
+      <td></td>
+      <td>0.033465</td>
+      <td>49.845977</td>
+      <td>0.045488</td>
+      <td>0.258530</td>
+    </tr>
+    <tr>
+      <td>East Bluffs Loop</td>
+      <td>Highline Lake State Park</td>
+      <td>0.000000</td>
+      <td>51.042218</td>
+      <td>0.005688</td>
+      <td>0.074362</td>
+    </tr>
+    <tr>
+      <td>East Sand Hills Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.397387</td>
+      <td>34.468299</td>
+      <td>0.622135</td>
+      <td>0.762843</td>
+    </tr>
+    <tr>
+      <td>East Sand Hills Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.674184</td>
+      <td>32.964420</td>
+      <td>0.634908</td>
+      <td>0.762843</td>
+    </tr>
+    <tr>
+      <td>East Valley Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>49.885451</td>
+      <td>0.019907</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>East Valley Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>49.791780</td>
+      <td>0.019907</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>American Lakes Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>24.678459</td>
+      <td>0.442447</td>
+      <td>0.604428</td>
+    </tr>
+    <tr>
+      <td>North Canadian Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.807147</td>
+      <td>33.562578</td>
+      <td>0.688367</td>
+      <td>0.761608</td>
+    </tr>
+    <tr>
+      <td>Bishop Rock Road</td>
+      <td>Dry Creek STL</td>
+      <td>0.046355</td>
+      <td>44.491836</td>
+      <td>0.317680</td>
+      <td>0.217472</td>
+    </tr>
+    <tr>
+      <td>East Canyon Trail</td>
+      <td>Castlewood Canyon State Park</td>
+      <td>0.063434</td>
+      <td>47.413805</td>
+      <td>0.053061</td>
+      <td>0.122500</td>
+    </tr>
+    <tr>
+      <td>Elk Range Trail</td>
+      <td></td>
+      <td>0.002362</td>
+      <td>43.189316</td>
+      <td>0.154561</td>
+      <td>0.275722</td>
+    </tr>
+    <tr>
+      <td>Elk Meadow Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.092963</td>
+      <td>37.780897</td>
+      <td>0.256322</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Equestrian Trail</td>
+      <td>Lathrop State Park</td>
+      <td>0.000000</td>
+      <td>50.771896</td>
+      <td>0.021130</td>
+      <td>0.104038</td>
+    </tr>
+    <tr>
+      <td>Engle Loop</td>
+      <td>Highline Lake State Park</td>
+      <td>0.000000</td>
+      <td>51.091967</td>
+      <td>0.005688</td>
+      <td>0.074362</td>
+    </tr>
+    <tr>
+      <td>Enchanted Mesa Trail</td>
+      <td>Ridgway State Park</td>
+      <td>0.339344</td>
+      <td>46.093416</td>
+      <td>0.278608</td>
+      <td>0.300242</td>
+    </tr>
+    <tr>
+      <td>Fishing Pond Trails</td>
+      <td>Ridgway State Park</td>
+      <td>0.328597</td>
+      <td>46.207275</td>
+      <td>0.277292</td>
+      <td>0.299867</td>
+    </tr>
+    <tr>
+      <td>Five Points Campground Loop</td>
+      <td>Arkansas Headwaters RA - Five Points (R&amp;PP Site)</td>
+      <td>0.000000</td>
+      <td>49.065711</td>
+      <td>0.021130</td>
+      <td>0.110683</td>
+    </tr>
+    <tr>
+      <td>Foothills Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.167756</td>
+      <td>0.019907</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>Fox Meadow Loop</td>
+      <td>Barr Lake State Park</td>
+      <td>0.007480</td>
+      <td>50.884569</td>
+      <td>0.043084</td>
+      <td>0.264709</td>
+    </tr>
+    <tr>
+      <td>Geer Pond Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.133065</td>
+      <td>37.920087</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Government Creek Road</td>
+      <td>State Forest State Park</td>
+      <td>0.043173</td>
+      <td>29.154515</td>
+      <td>0.326289</td>
+      <td>0.489910</td>
+    </tr>
+    <tr>
+      <td>Gould Loop Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.538065</td>
+      <td>32.012936</td>
+      <td>0.690061</td>
+      <td>0.756677</td>
+    </tr>
+    <tr>
+      <td>Gould Loop Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.274618</td>
+      <td>31.750839</td>
+      <td>0.684575</td>
+      <td>0.756677</td>
+    </tr>
+    <tr>
+      <td>Greasewood Flats Trail</td>
+      <td>Highline Lake State Park</td>
+      <td>0.000000</td>
+      <td>51.021670</td>
+      <td>0.005688</td>
+      <td>0.077872</td>
+    </tr>
+    <tr>
+      <td>Grassland Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.815882</td>
+      <td>0.019907</td>
+      <td>0.212622</td>
+    </tr>
+    <tr>
+      <td>Grass Creek Yurt Summer Access Road</td>
+      <td>State Forest State Park</td>
+      <td>0.089769</td>
+      <td>32.023424</td>
+      <td>0.328003</td>
+      <td>0.511371</td>
+    </tr>
+    <tr>
+      <td>Hallett?s Peek Trail</td>
+      <td>Granby Ranch (Conservation Easement)</td>
+      <td>0.617273</td>
+      <td>37.981390</td>
+      <td>0.630710</td>
+      <td>0.733682</td>
+    </tr>
+    <tr>
+      <td>Hecla Horse Trail</td>
+      <td>Arkansas Headwaters RA - Hecla Junction (R&amp;PP Site)</td>
+      <td>0.000000</td>
+      <td>46.552637</td>
+      <td>0.088341</td>
+      <td>0.129924</td>
+    </tr>
+    <tr>
+      <td>Herrington Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.474222</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Hidden Valley Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.000000</td>
+      <td>24.621076</td>
+      <td>0.178693</td>
+      <td>0.469187</td>
+    </tr>
+    <tr>
+      <td>Hidden Mesa Trail</td>
+      <td></td>
+      <td>0.006890</td>
+      <td>49.541665</td>
+      <td>0.048174</td>
+      <td>0.172836</td>
+    </tr>
+    <tr>
+      <td>Highline Lake Trail</td>
+      <td>Highline Lake State Park</td>
+      <td>0.000000</td>
+      <td>51.042218</td>
+      <td>0.005688</td>
+      <td>0.074362</td>
+    </tr>
+    <tr>
+      <td>Highline Lake Trail</td>
+      <td>Highline Lake State Park</td>
+      <td>0.000000</td>
+      <td>50.847794</td>
+      <td>0.005688</td>
+      <td>0.074362</td>
+    </tr>
+    <tr>
+      <td>Highline Lake Trail</td>
+      <td>Highline Lake State Park</td>
+      <td>0.000000</td>
+      <td>50.980067</td>
+      <td>0.005688</td>
+      <td>0.074362</td>
+    </tr>
+    <tr>
+      <td>Highline Lake Trail</td>
+      <td>Highline Lake State Park</td>
+      <td>0.000000</td>
+      <td>50.919284</td>
+      <td>0.005688</td>
+      <td>0.074362</td>
+    </tr>
+    <tr>
+      <td>Hogback Valley Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>50.992957</td>
+      <td>0.022528</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Homestead Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.237329</td>
+      <td>37.963765</td>
+      <td>0.265854</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Homestead Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.170250</td>
+      <td>37.830423</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Moose Meadow Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.246850</td>
+      <td>38.377437</td>
+      <td>0.477989</td>
+      <td>0.712902</td>
+    </tr>
+    <tr>
+      <td>Howard Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>49.005001</td>
+      <td>0.019817</td>
+      <td>0.221432</td>
+    </tr>
+    <tr>
+      <td>Indian Summer Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>49.582515</td>
+      <td>0.023685</td>
+      <td>0.231036</td>
+    </tr>
+    <tr>
+      <td>Kelly Lake Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.000000</td>
+      <td>25.468081</td>
+      <td>0.178693</td>
+      <td>0.450955</td>
+    </tr>
+    <tr>
+      <td>Kelly Lake Trail</td>
+      <td>State Forest State Park</td>
+      <td>1.242021</td>
+      <td>32.758829</td>
+      <td>0.687818</td>
+      <td>0.756677</td>
+    </tr>
+    <tr>
+      <td>K-Lynn Cameron Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.012362</td>
+      <td>43.873460</td>
+      <td>0.201794</td>
+      <td>0.358850</td>
+    </tr>
+    <tr>
+      <td>Justin Harrington Memorial Walkway Trail</td>
+      <td>Holly SWA</td>
+      <td>0.000000</td>
+      <td>50.637480</td>
+      <td>0.021220</td>
+      <td>0.101660</td>
+    </tr>
+    <tr>
+      <td>Justin Harrington Memorial Walkway Trail</td>
+      <td>Holly SWA</td>
+      <td>0.000000</td>
+      <td>50.663708</td>
+      <td>0.021220</td>
+      <td>0.101660</td>
+    </tr>
+    <tr>
+      <td>Kimmons Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>49.453858</td>
+      <td>0.019907</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>Lake Agnes Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>26.517615</td>
+      <td>0.442447</td>
+      <td>0.602578</td>
+    </tr>
+    <tr>
+      <td>Lakeside to Swimbeach Trail</td>
+      <td>Jackson Lake State Park</td>
+      <td>0.000000</td>
+      <td>46.542106</td>
+      <td>0.076530</td>
+      <td>0.123000</td>
+    </tr>
+    <tr>
+      <td>Laughing Horse Loop Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.025591</td>
+      <td>50.611569</td>
+      <td>0.046753</td>
+      <td>0.290488</td>
+    </tr>
+    <tr>
+      <td>Lions Head Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.147409</td>
+      <td>40.909266</td>
+      <td>0.594734</td>
+      <td>0.559363</td>
+    </tr>
+    <tr>
+      <td>Little Thompson Overlook Trail</td>
+      <td></td>
+      <td>0.023622</td>
+      <td>49.503188</td>
+      <td>0.042796</td>
+      <td>0.259954</td>
+    </tr>
+    <tr>
+      <td>Loggers Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.650348</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Longs Canyon Trail</td>
+      <td>Trinidad Lake State Park</td>
+      <td>0.010000</td>
+      <td>48.894347</td>
+      <td>0.042750</td>
+      <td>0.114651</td>
+    </tr>
+    <tr>
+      <td>Longs Canyon Trail</td>
+      <td>Trinidad Lake State Park</td>
+      <td>0.010394</td>
+      <td>49.037901</td>
+      <td>0.042519</td>
+      <td>0.134036</td>
+    </tr>
+    <tr>
+      <td>Lookout Mountain Trail</td>
+      <td></td>
+      <td>0.101575</td>
+      <td>49.577089</td>
+      <td>0.048707</td>
+      <td>0.228462</td>
+    </tr>
+    <tr>
+      <td>Lookout Mountain Trail</td>
+      <td></td>
+      <td>0.108071</td>
+      <td>49.253418</td>
+      <td>0.051187</td>
+      <td>0.228462</td>
+    </tr>
+    <tr>
+      <td>Lost Still Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.321178</td>
+      <td>38.152333</td>
+      <td>0.265854</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Lost Pond Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.170250</td>
+      <td>37.833939</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Lumberjack Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.057194</td>
+      <td>30.807120</td>
+      <td>0.499630</td>
+      <td>0.633988</td>
+    </tr>
+    <tr>
+      <td>Mack Mesa Loop</td>
+      <td>Highline Lake State Park</td>
+      <td>0.000000</td>
+      <td>50.888965</td>
+      <td>0.005688</td>
+      <td>0.077872</td>
+    </tr>
+    <tr>
+      <td>Mack Mesa S's Trail</td>
+      <td>Highline Lake State Park</td>
+      <td>0.000000</td>
+      <td>50.821672</td>
+      <td>0.005688</td>
+      <td>0.077872</td>
+    </tr>
+    <tr>
+      <td>Marmot Passage Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.209228</td>
+      <td>39.521522</td>
+      <td>0.667208</td>
+      <td>0.745496</td>
+    </tr>
+    <tr>
+      <td>Mason Creek Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.004122</td>
+      <td>40.343930</td>
+      <td>0.643572</td>
+      <td>0.576930</td>
+    </tr>
+    <tr>
+      <td>Mendenhall Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.043480</td>
+      <td>29.893588</td>
+      <td>0.542255</td>
+      <td>0.685275</td>
+    </tr>
+    <tr>
+      <td>Medicine Wheel Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.435056</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Mill Creek Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.841021</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Mill Creek Link Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>49.333416</td>
+      <td>0.019817</td>
+      <td>0.221432</td>
+    </tr>
+    <tr>
+      <td>Montgomery Pass Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.000000</td>
+      <td>27.409143</td>
+      <td>0.174802</td>
+      <td>0.464813</td>
+    </tr>
+    <tr>
+      <td>Montgomery Pass Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.000000</td>
+      <td>27.540756</td>
+      <td>0.165546</td>
+      <td>0.464813</td>
+    </tr>
+    <tr>
+      <td>Moonshine Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.095697</td>
+      <td>38.321038</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Mountain Logger Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.207253</td>
+      <td>38.197300</td>
+      <td>0.265854</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Mountain Lion Spur to Quarry Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.563397</td>
+      <td>41.307973</td>
+      <td>0.444826</td>
+      <td>0.443312</td>
+    </tr>
+    <tr>
+      <td>Mountain Lion Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.678258</td>
+      <td>40.173063</td>
+      <td>0.594867</td>
+      <td>0.642563</td>
+    </tr>
+    <tr>
+      <td>Mule Deer Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.547785</td>
+      <td>37.420902</td>
+      <td>0.662353</td>
+      <td>0.726123</td>
+    </tr>
+    <tr>
+      <td>Mule Deer Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.443372</td>
+      <td>37.684240</td>
+      <td>0.654855</td>
+      <td>0.719361</td>
+    </tr>
+    <tr>
+      <td>Mountain View Trail</td>
+      <td>Elkhead Reservoir State Park</td>
+      <td>0.000000</td>
+      <td>41.552429</td>
+      <td>0.151731</td>
+      <td>0.328640</td>
+    </tr>
+    <tr>
+      <td>Mountain View Trail</td>
+      <td>Elkhead Reservoir State Park</td>
+      <td>0.000000</td>
+      <td>41.540436</td>
+      <td>0.151731</td>
+      <td>0.328640</td>
+    </tr>
+    <tr>
+      <td>Mountain View Trail</td>
+      <td>Elkhead Reservoir State Park</td>
+      <td>0.000000</td>
+      <td>41.553531</td>
+      <td>0.151731</td>
+      <td>0.328640</td>
+    </tr>
+    <tr>
+      <td>Mountain View Trail</td>
+      <td>Elkhead Reservoir State Park</td>
+      <td>0.000000</td>
+      <td>41.651983</td>
+      <td>0.151731</td>
+      <td>0.328640</td>
+    </tr>
+    <tr>
+      <td>Mountain View Trail</td>
+      <td>Elkhead Reservoir State Park</td>
+      <td>0.000000</td>
+      <td>41.941434</td>
+      <td>0.146791</td>
+      <td>0.338133</td>
+    </tr>
+    <tr>
+      <td>Mountain View Trail</td>
+      <td>Elkhead Reservoir State Park</td>
+      <td>0.000000</td>
+      <td>42.030862</td>
+      <td>0.151731</td>
+      <td>0.338133</td>
+    </tr>
+    <tr>
+      <td>Mountain View Trail</td>
+      <td>Elkhead Reservoir State Park</td>
+      <td>0.000000</td>
+      <td>42.030862</td>
+      <td>0.151731</td>
+      <td>0.338133</td>
+    </tr>
+    <tr>
+      <td>Mule Deer Trail</td>
+      <td>Mancos State Park</td>
+      <td>0.000000</td>
+      <td>45.444995</td>
+      <td>0.127705</td>
+      <td>0.121340</td>
+    </tr>
+    <tr>
+      <td>Mule Deer Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.554982</td>
+      <td>35.818338</td>
+      <td>0.579868</td>
+      <td>0.703827</td>
+    </tr>
+    <tr>
+      <td>Nelson Loop Trail</td>
+      <td></td>
+      <td>0.034457</td>
+      <td>47.477572</td>
+      <td>0.061575</td>
+      <td>0.369695</td>
+    </tr>
+    <tr>
+      <td>Nomad Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.009449</td>
+      <td>49.515202</td>
+      <td>0.046861</td>
+      <td>0.281577</td>
+    </tr>
+    <tr>
+      <td>Nobel Cabin Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.204883</td>
+      <td>38.100557</td>
+      <td>0.265854</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>North Canadian Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.138251</td>
+      <td>31.088142</td>
+      <td>0.637379</td>
+      <td>0.742700</td>
+    </tr>
+    <tr>
+      <td>North Talon Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>49.570812</td>
+      <td>0.021130</td>
+      <td>0.207001</td>
+    </tr>
+    <tr>
+      <td>Oak Leaf Trail</td>
+      <td>Ridgway State Park</td>
+      <td>0.323595</td>
+      <td>46.219758</td>
+      <td>0.277292</td>
+      <td>0.299867</td>
+    </tr>
+    <tr>
+      <td>Osborn Homestead Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.168974</td>
+      <td>38.001973</td>
+      <td>0.261253</td>
+      <td>0.412160</td>
+    </tr>
+    <tr>
+      <td>Peak View Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.212175</td>
+      <td>37.748174</td>
+      <td>0.260923</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Pearl Lake Trail</td>
+      <td>Pearl Lake State Park</td>
+      <td>0.798458</td>
+      <td>34.905856</td>
+      <td>0.713415</td>
+      <td>0.783242</td>
+    </tr>
+    <tr>
+      <td>Perimeter Trail</td>
+      <td>Barr Lake State Park</td>
+      <td>0.031496</td>
+      <td>50.592949</td>
+      <td>0.042771</td>
+      <td>0.275606</td>
+    </tr>
+    <tr>
+      <td>Pennock Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.051577</td>
+      <td>31.673487</td>
+      <td>0.328003</td>
+      <td>0.524690</td>
+    </tr>
+    <tr>
+      <td>Picture Rock Trail</td>
+      <td></td>
+      <td>0.012699</td>
+      <td>48.811091</td>
+      <td>0.053936</td>
+      <td>0.292435</td>
+    </tr>
+    <tr>
+      <td>Plum Creek Nature Trail</td>
+      <td>Chatfield State Park</td>
+      <td>0.035362</td>
+      <td>52.896385</td>
+      <td>0.026700</td>
+      <td>0.195661</td>
+    </tr>
+    <tr>
+      <td>Ponderosa Trail</td>
+      <td></td>
+      <td>0.098997</td>
+      <td>46.037982</td>
+      <td>0.212437</td>
+      <td>0.342353</td>
+    </tr>
+    <tr>
+      <td>Ponderosa Loop</td>
+      <td></td>
+      <td>0.045669</td>
+      <td>48.035937</td>
+      <td>0.049128</td>
+      <td>0.310815</td>
+    </tr>
+    <tr>
+      <td>Plymouth Mountain Trail</td>
+      <td></td>
+      <td>0.569050</td>
+      <td>49.601435</td>
+      <td>0.074308</td>
+      <td>0.169875</td>
+    </tr>
+    <tr>
+      <td>Plymouth Creek Trail</td>
+      <td></td>
+      <td>0.424254</td>
+      <td>50.544040</td>
+      <td>0.049286</td>
+      <td>0.143029</td>
+    </tr>
+    <tr>
+      <td>Preacher's Hollow Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.113196</td>
+      <td>37.978756</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Prairie Welcome Trail</td>
+      <td>Barr Lake State Park</td>
+      <td>0.006693</td>
+      <td>50.771799</td>
+      <td>0.043084</td>
+      <td>0.262599</td>
+    </tr>
+    <tr>
+      <td>Powerline Trail</td>
+      <td>Roxborough State Park</td>
+      <td>0.552047</td>
+      <td>49.961569</td>
+      <td>0.047839</td>
+      <td>0.163499</td>
+    </tr>
+    <tr>
+      <td>Poverty Bar Trail</td>
+      <td>Steamboat Lake State Park</td>
+      <td>0.989338</td>
+      <td>34.111713</td>
+      <td>0.678438</td>
+      <td>0.754534</td>
+    </tr>
+    <tr>
+      <td>Pueblo Reservoir Trail</td>
+      <td>Lake Pueblo State Park</td>
+      <td>0.000000</td>
+      <td>53.990526</td>
+      <td>0.021220</td>
+      <td>0.179467</td>
+    </tr>
+    <tr>
+      <td>Pueblo Reservoir Trail</td>
+      <td>Lake Pueblo State Park</td>
+      <td>0.000000</td>
+      <td>54.132627</td>
+      <td>0.021220</td>
+      <td>0.179467</td>
+    </tr>
+    <tr>
+      <td>Racoon Ridge Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.342461</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Raccoon Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.685209</td>
+      <td>36.287486</td>
+      <td>0.691644</td>
+      <td>0.754575</td>
+    </tr>
+    <tr>
+      <td>Rainbow Ridge Fishing Access Trail</td>
+      <td>Steamboat Lake State Park</td>
+      <td>0.799061</td>
+      <td>35.206332</td>
+      <td>0.590363</td>
+      <td>0.533227</td>
+    </tr>
+    <tr>
+      <td>Rainbow Ridge Fishing Access Trail</td>
+      <td>Steamboat Lake State Park</td>
+      <td>0.778881</td>
+      <td>35.301253</td>
+      <td>0.583748</td>
+      <td>0.533227</td>
+    </tr>
+    <tr>
+      <td>Railroad Bed Trail</td>
+      <td>Cherry Creek State Park</td>
+      <td>0.000000</td>
+      <td>51.023298</td>
+      <td>0.021130</td>
+      <td>0.227299</td>
+    </tr>
+    <tr>
+      <td>Railroad Bed Trail</td>
+      <td>Cherry Creek State Park</td>
+      <td>0.000000</td>
+      <td>50.742462</td>
+      <td>0.021130</td>
+      <td>0.227299</td>
+    </tr>
+    <tr>
+      <td>Rattlesnake Gulch Trail</td>
+      <td></td>
+      <td>0.258576</td>
+      <td>50.891909</td>
+      <td>0.054769</td>
+      <td>0.155132</td>
+    </tr>
+    <tr>
+      <td>Rattlesnake Gulch Trail</td>
+      <td>Eldorado Canyon State Park</td>
+      <td>0.090439</td>
+      <td>47.190224</td>
+      <td>0.061334</td>
+      <td>0.274713</td>
+    </tr>
+    <tr>
+      <td>Ranger Ridge Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.156761</td>
+      <td>37.961450</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Ranger Lakes Nature Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.202853</td>
+      <td>31.598002</td>
+      <td>0.676227</td>
+      <td>0.749774</td>
+    </tr>
+    <tr>
+      <td>Ranger Lakes Nature Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.145483</td>
+      <td>31.374153</td>
+      <td>0.650697</td>
+      <td>0.757912</td>
+    </tr>
+    <tr>
+      <td>Red Mesa Loop</td>
+      <td></td>
+      <td>0.598491</td>
+      <td>48.785215</td>
+      <td>0.073162</td>
+      <td>0.182329</td>
+    </tr>
+    <tr>
+      <td>Reilly Canyon Trail</td>
+      <td>Trinidad Lake State Park</td>
+      <td>0.010000</td>
+      <td>48.859398</td>
+      <td>0.034120</td>
+      <td>0.115542</td>
+    </tr>
+    <tr>
+      <td>Reilly Canyon Trail</td>
+      <td>Trinidad Lake State Park</td>
+      <td>0.010000</td>
+      <td>48.642640</td>
+      <td>0.086397</td>
+      <td>0.115151</td>
+    </tr>
+    <tr>
+      <td>River Park Trail &amp; Frisbee Golf Trail</td>
+      <td>Arkansas Headwaters RA - BV Whitewater Park</td>
+      <td>0.364926</td>
+      <td>44.015560</td>
+      <td>0.256467</td>
+      <td>0.275860</td>
+    </tr>
+    <tr>
+      <td>Rising Sun Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>43.578426</td>
+      <td>0.111176</td>
+      <td>0.295471</td>
+    </tr>
+    <tr>
+      <td>Rimrock Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>50.330723</td>
+      <td>0.019907</td>
+      <td>0.213982</td>
+    </tr>
+    <tr>
+      <td>River View Trail</td>
+      <td>Arkansas Headwaters RA - Ruby Mountain (R&amp;PP Site)</td>
+      <td>0.083849</td>
+      <td>45.118112</td>
+      <td>0.173330</td>
+      <td>0.130786</td>
+    </tr>
+    <tr>
+      <td>River Park Trail &amp; Frisbee Golf Trail</td>
+      <td>Buena Vista SWA (Fishing Easement)</td>
+      <td>0.374040</td>
+      <td>44.232116</td>
+      <td>0.223534</td>
+      <td>0.260001</td>
+    </tr>
+    <tr>
+      <td>Rock Pond Trail</td>
+      <td>Dome Rock SWA</td>
+      <td>0.027342</td>
+      <td>38.034369</td>
+      <td>0.249121</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Rock Pond Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.174807</td>
+      <td>37.908605</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Roundup Trail</td>
+      <td></td>
+      <td>0.000000</td>
+      <td>50.929113</td>
+      <td>0.024998</td>
+      <td>0.210101</td>
+    </tr>
+    <tr>
+      <td>Ruby Wash Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.010000</td>
+      <td>42.892254</td>
+      <td>0.188086</td>
+      <td>0.308080</td>
+    </tr>
+    <tr>
+      <td>Ruby Jewel Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.000000</td>
+      <td>22.655654</td>
+      <td>0.178693</td>
+      <td>0.455460</td>
+    </tr>
+    <tr>
+      <td>Sand Rocks Trail</td>
+      <td>Elkhead Reservoir State Park</td>
+      <td>0.000000</td>
+      <td>41.717357</td>
+      <td>0.146536</td>
+      <td>0.338133</td>
+    </tr>
+    <tr>
+      <td>Sand Rocks Trail</td>
+      <td>Elkhead Reservoir State Park</td>
+      <td>0.000000</td>
+      <td>41.893253</td>
+      <td>0.146791</td>
+      <td>0.338133</td>
+    </tr>
+    <tr>
+      <td>Sand Rocks Trail</td>
+      <td>Elkhead Reservoir State Park</td>
+      <td>0.000000</td>
+      <td>42.235669</td>
+      <td>0.136581</td>
+      <td>0.343934</td>
+    </tr>
+    <tr>
+      <td>Sawatch Range Trail</td>
+      <td>Arkansas Headwaters RA - Hayden Meadows</td>
+      <td>0.365585</td>
+      <td>36.776205</td>
+      <td>0.646125</td>
+      <td>0.732184</td>
+    </tr>
+    <tr>
+      <td>School Pond Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.176630</td>
+      <td>37.890696</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Scenic View Trail</td>
+      <td></td>
+      <td>0.558784</td>
+      <td>49.669579</td>
+      <td>0.080874</td>
+      <td>0.193159</td>
+    </tr>
+    <tr>
+      <td>Sawmill Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.002756</td>
+      <td>48.943255</td>
+      <td>0.042994</td>
+      <td>0.285067</td>
+    </tr>
+    <tr>
+      <td>Shoshone Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.006933</td>
+      <td>46.444026</td>
+      <td>0.068007</td>
+      <td>0.346853</td>
+    </tr>
+    <tr>
+      <td>Shoshone Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.006890</td>
+      <td>46.652309</td>
+      <td>0.068007</td>
+      <td>0.346853</td>
+    </tr>
+    <tr>
+      <td>Swan Johnson Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.006693</td>
+      <td>49.431210</td>
+      <td>0.042994</td>
+      <td>0.277883</td>
+    </tr>
+    <tr>
+      <td>Shoreline Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>49.635850</td>
+      <td>0.019907</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>Siedel's Suckhole Rapid Trail</td>
+      <td>Arkansas Headwaters RA - Hecla Junction (R&amp;PP Site)</td>
+      <td>0.000000</td>
+      <td>46.556784</td>
+      <td>0.088341</td>
+      <td>0.129924</td>
+    </tr>
+    <tr>
+      <td>Sinking Sun Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>43.578426</td>
+      <td>0.111176</td>
+      <td>0.295471</td>
+    </tr>
+    <tr>
+      <td>Silver Fox Trail</td>
+      <td></td>
+      <td>0.102759</td>
+      <td>45.871259</td>
+      <td>0.211700</td>
+      <td>0.356283</td>
+    </tr>
+    <tr>
+      <td>Silver Creek Access Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>31.434899</td>
+      <td>0.317740</td>
+      <td>0.489798</td>
+    </tr>
+    <tr>
+      <td>Sisters Trail</td>
+      <td></td>
+      <td>0.090378</td>
+      <td>46.146325</td>
+      <td>0.215388</td>
+      <td>0.342088</td>
+    </tr>
+    <tr>
+      <td>Skyline Loop</td>
+      <td>Ridgway State Park</td>
+      <td>0.308625</td>
+      <td>45.930934</td>
+      <td>0.276727</td>
+      <td>0.299867</td>
+    </tr>
+    <tr>
+      <td>Soderberg Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.794382</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Soaring Kestral Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.926891</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Snowshoe Hare Connector to Mule Deer Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.835520</td>
+      <td>36.397579</td>
+      <td>0.684106</td>
+      <td>0.738484</td>
+    </tr>
+    <tr>
+      <td>Snowshoe Hare Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.865531</td>
+      <td>38.080117</td>
+      <td>0.659456</td>
+      <td>0.719361</td>
+    </tr>
+    <tr>
+      <td>Snowshoe Hare Trail</td>
+      <td>Golden Gate Canyon State Park</td>
+      <td>0.959212</td>
+      <td>37.577242</td>
+      <td>0.667087</td>
+      <td>0.723743</td>
+    </tr>
+    <tr>
+      <td>South Canadian Road</td>
+      <td>State Forest State Park</td>
+      <td>0.052054</td>
+      <td>31.121044</td>
+      <td>0.397190</td>
+      <td>0.598848</td>
+    </tr>
+    <tr>
+      <td>South Shore Trail</td>
+      <td>Trinidad Lake State Park</td>
+      <td>0.010000</td>
+      <td>49.774449</td>
+      <td>0.034120</td>
+      <td>0.115542</td>
+    </tr>
+    <tr>
+      <td>South Ridge Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>49.003582</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>South Valley Loop</td>
+      <td>Larimer County Open Space</td>
+      <td>0.003346</td>
+      <td>49.227388</td>
+      <td>0.042994</td>
+      <td>0.272389</td>
+    </tr>
+    <tr>
+      <td>South Valley Loop</td>
+      <td>Larimer County Open Space</td>
+      <td>0.005906</td>
+      <td>49.400948</td>
+      <td>0.043084</td>
+      <td>0.271409</td>
+    </tr>
+    <tr>
+      <td>South Talon Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>49.193985</td>
+      <td>0.021130</td>
+      <td>0.215969</td>
+    </tr>
+    <tr>
+      <td>Spring Creek Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.496144</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Spring Creek Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>49.003582</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Staunton Ranch Trail</td>
+      <td>Staunton State Park</td>
+      <td>1.159921</td>
+      <td>39.290941</td>
+      <td>0.667208</td>
+      <td>0.745496</td>
+    </tr>
+    <tr>
+      <td>Dines Meadow Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.572006</td>
+      <td>40.825318</td>
+      <td>0.576883</td>
+      <td>0.391590</td>
+    </tr>
+    <tr>
+      <td>Dines Meadow Trail</td>
+      <td>Staunton State Park</td>
+      <td>0.567805</td>
+      <td>41.143206</td>
+      <td>0.571861</td>
+      <td>0.322787</td>
+    </tr>
+    <tr>
+      <td>Staunton Ranch Road</td>
+      <td>Staunton State Park</td>
+      <td>1.250171</td>
+      <td>39.777295</td>
+      <td>0.667208</td>
+      <td>0.745496</td>
+    </tr>
+    <tr>
+      <td>Stoner Mill Trail</td>
+      <td>Mueller State Park</td>
+      <td>0.115019</td>
+      <td>37.939450</td>
+      <td>0.261253</td>
+      <td>0.416836</td>
+    </tr>
+    <tr>
+      <td>Stout Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.978186</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Sundance Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.011024</td>
+      <td>49.088249</td>
+      <td>0.042994</td>
+      <td>0.257865</td>
+    </tr>
+    <tr>
+      <td>Sundance Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.784250</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Sundance Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.140116</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Sundance Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.043877</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Sunrise Vista Trail</td>
+      <td>Steamboat Lake State Park</td>
+      <td>0.828976</td>
+      <td>34.884802</td>
+      <td>0.659372</td>
+      <td>0.559815</td>
+    </tr>
+    <tr>
+      <td>Swan Johnson Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.011811</td>
+      <td>49.811255</td>
+      <td>0.043084</td>
+      <td>0.279992</td>
+    </tr>
+    <tr>
+      <td>Swallowtail Trail Upper Loop</td>
+      <td>Roxborough State Park</td>
+      <td>0.388264</td>
+      <td>50.617405</td>
+      <td>0.047888</td>
+      <td>0.166840</td>
+    </tr>
+    <tr>
+      <td>Sweitzer Trail</td>
+      <td>Sweitzer Lake State Park</td>
+      <td>0.000000</td>
+      <td>49.968060</td>
+      <td>0.020627</td>
+      <td>0.083172</td>
+    </tr>
+    <tr>
+      <td>Sweitzer Trail</td>
+      <td>Sweitzer Lake State Park</td>
+      <td>0.000000</td>
+      <td>49.938417</td>
+      <td>0.020627</td>
+      <td>0.083172</td>
+    </tr>
+    <tr>
+      <td>Sweitzer Trail</td>
+      <td>Sweitzer Lake State Park</td>
+      <td>0.000000</td>
+      <td>49.924426</td>
+      <td>0.020627</td>
+      <td>0.092850</td>
+    </tr>
+    <tr>
+      <td>Talon Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>49.751662</td>
+      <td>0.021130</td>
+      <td>0.207001</td>
+    </tr>
+    <tr>
+      <td>Talon Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.651960</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Sylvan Lake Trail</td>
+      <td>Sylvan Lake State Park</td>
+      <td>1.292353</td>
+      <td>34.471522</td>
+      <td>0.674768</td>
+      <td>0.770027</td>
+    </tr>
+    <tr>
+      <td>Sylvan Lake Trail</td>
+      <td>Sylvan Lake State Park</td>
+      <td>1.251347</td>
+      <td>33.969899</td>
+      <td>0.703594</td>
+      <td>0.770027</td>
+    </tr>
+    <tr>
+      <td>Sylvan Lake Trail</td>
+      <td>Sylvan Lake State Park</td>
+      <td>1.292353</td>
+      <td>34.471522</td>
+      <td>0.674768</td>
+      <td>0.770027</td>
+    </tr>
+    <tr>
+      <td>Timber Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>48.731442</td>
+      <td>0.019817</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>Tilman Bishop Wildlife Area Trail</td>
+      <td>Tilman Bishop SWA</td>
+      <td>0.000000</td>
+      <td>53.139882</td>
+      <td>0.005688</td>
+      <td>0.074222</td>
+    </tr>
+    <tr>
+      <td>Towers Road</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.555506</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Trail Behind Dam</td>
+      <td>Barr Lake State Park</td>
+      <td>0.012598</td>
+      <td>50.546383</td>
+      <td>0.043084</td>
+      <td>0.264709</td>
+    </tr>
+    <tr>
+      <td>Thunder Pass Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.010000</td>
+      <td>25.664462</td>
+      <td>0.442447</td>
+      <td>0.604428</td>
+    </tr>
+    <tr>
+      <td>Twin Fawn Trail</td>
+      <td>Ridgway State Park</td>
+      <td>0.339023</td>
+      <td>45.959182</td>
+      <td>0.278608</td>
+      <td>0.300242</td>
+    </tr>
+    <tr>
+      <td>Turtle Pond Trail</td>
+      <td>Chatfield State Park</td>
+      <td>0.141632</td>
+      <td>52.953289</td>
+      <td>0.026700</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Turkey Trot Trail</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.435056</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>Two Brands Trail</td>
+      <td></td>
+      <td>0.158584</td>
+      <td>52.444538</td>
+      <td>0.028099</td>
+      <td>0.100261</td>
+    </tr>
+    <tr>
+      <td>Lone Pine Trail</td>
+      <td>Cherokee SWA - Lone Pine Unit</td>
+      <td>0.010000</td>
+      <td>43.638468</td>
+      <td>0.173037</td>
+      <td>0.286875</td>
+    </tr>
+    <tr>
+      <td>Lone Pine Trail</td>
+      <td>Cherokee SWA - Lone Pine Unit</td>
+      <td>0.008652</td>
+      <td>45.431233</td>
+      <td>0.034551</td>
+      <td>0.265715</td>
+    </tr>
+    <tr>
+      <td>Middle Unit Horse Trail</td>
+      <td>Cherokee SWA - Middle Unit</td>
+      <td>0.010000</td>
+      <td>44.079441</td>
+      <td>0.156802</td>
+      <td>0.291781</td>
+    </tr>
+    <tr>
+      <td>Pearl Lake Trail</td>
+      <td>Pearl Lake State Park</td>
+      <td>0.631109</td>
+      <td>34.980499</td>
+      <td>0.713415</td>
+      <td>0.783242</td>
+    </tr>
+    <tr>
+      <td>Whipple Trail Main Route</td>
+      <td>Arkansas Headwaters RA - BLM Site</td>
+      <td>0.355812</td>
+      <td>43.702932</td>
+      <td>0.288810</td>
+      <td>0.298141</td>
+    </tr>
+    <tr>
+      <td>Ute Pass Trail</td>
+      <td>State Forest State Park</td>
+      <td>0.176559</td>
+      <td>30.646011</td>
+      <td>0.660451</td>
+      <td>0.742378</td>
+    </tr>
+    <tr>
+      <td>Walsenberg Trail</td>
+      <td>Lathrop State Park</td>
+      <td>0.000000</td>
+      <td>51.148611</td>
+      <td>0.021130</td>
+      <td>0.104038</td>
+    </tr>
+    <tr>
+      <td>Walker Ranch Loop</td>
+      <td>Eldorado Canyon State Park</td>
+      <td>0.205218</td>
+      <td>45.140271</td>
+      <td>0.283854</td>
+      <td>0.367508</td>
+    </tr>
+    <tr>
+      <td>Wapiti Trail</td>
+      <td>Ridgway State Park</td>
+      <td>0.321750</td>
+      <td>45.948609</td>
+      <td>0.276727</td>
+      <td>0.299867</td>
+    </tr>
+    <tr>
+      <td>Watchable Wildlife Overlook Trail</td>
+      <td>Navajo State Park</td>
+      <td>0.000000</td>
+      <td>48.570774</td>
+      <td>0.028378</td>
+      <td>0.062222</td>
+    </tr>
+    <tr>
+      <td>Wathen Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.434230</td>
+      <td>0.019817</td>
+      <td>0.236108</td>
+    </tr>
+    <tr>
+      <td>Waterton Link Trail</td>
+      <td>Chatfield State Park</td>
+      <td>0.148012</td>
+      <td>52.767921</td>
+      <td>0.026700</td>
+      <td>0.103560</td>
+    </tr>
+    <tr>
+      <td>West Meadows Loop</td>
+      <td>Staunton State Park</td>
+      <td>1.238091</td>
+      <td>39.411459</td>
+      <td>0.667208</td>
+      <td>0.752570</td>
+    </tr>
+    <tr>
+      <td>West Brush Creek Trail</td>
+      <td>Sylvan Lake State Park</td>
+      <td>1.215519</td>
+      <td>35.047097</td>
+      <td>0.698814</td>
+      <td>0.770027</td>
+    </tr>
+    <tr>
+      <td>West Valley Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>49.593086</td>
+      <td>0.019907</td>
+      <td>0.209306</td>
+    </tr>
+    <tr>
+      <td>West Ridge Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.000000</td>
+      <td>48.209612</td>
+      <td>0.019817</td>
+      <td>0.242024</td>
+    </tr>
+    <tr>
+      <td>Westridge Trail</td>
+      <td>Lory State Park</td>
+      <td>0.000000</td>
+      <td>48.213674</td>
+      <td>0.019817</td>
+      <td>0.221432</td>
+    </tr>
+    <tr>
+      <td>Wild Loop Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.038583</td>
+      <td>50.789682</td>
+      <td>0.045578</td>
+      <td>0.274611</td>
+    </tr>
+    <tr>
+      <td>Wild Loop Trail</td>
+      <td>Larimer County Open Space</td>
+      <td>0.033071</td>
+      <td>50.833436</td>
+      <td>0.045578</td>
+      <td>0.274611</td>
+    </tr>
+    <tr>
+      <td>Whitewater Trail</td>
+      <td>Arkansas Headwaters RA - BLM Site</td>
+      <td>0.345604</td>
+      <td>43.943933</td>
+      <td>0.279100</td>
+      <td>0.278736</td>
+    </tr>
+    <tr>
+      <td>Wetlands Interpretive Trail</td>
+      <td>Chatfield State Park</td>
+      <td>0.159860</td>
+      <td>52.964482</td>
+      <td>0.026700</td>
+      <td>0.103560</td>
+    </tr>
+    <tr>
+      <td>Waterton Link Trail</td>
+      <td>Chatfield State Park</td>
+      <td>0.184650</td>
+      <td>52.959884</td>
+      <td>0.027485</td>
+      <td>0.103560</td>
+    </tr>
+    <tr>
+      <td>Windmill Creek Loop</td>
+      <td>Cherry Creek State Park</td>
+      <td>0.000000</td>
+      <td>50.969513</td>
+      <td>0.021130</td>
+      <td>0.227299</td>
+    </tr>
+    <tr>
+      <td>Windmill Creek Loop</td>
+      <td>Cherry Creek State Park</td>
+      <td>0.000000</td>
+      <td>50.861166</td>
+      <td>0.021130</td>
+      <td>0.227299</td>
+    </tr>
+    <tr>
+      <td>BLM Trail 6045a</td>
+      <td>Arkansas Headwaters RA - Browns Canyon</td>
+      <td>0.049580</td>
+      <td>45.583141</td>
+      <td>0.172069</td>
+      <td>0.135725</td>
+    </tr>
+    <tr>
+      <td>Zebulon Pike Trail</td>
+      <td>Arkansas Headwaters RA - BLM Site</td>
+      <td>0.335396</td>
+      <td>44.184935</td>
+      <td>0.246277</td>
+      <td>0.263837</td>
+    </tr>
+    <tr>
+      <td>Yurt to Yurt Winter Access Trail</td>
+      <td>State Forest State Park</td>
+      <td>1.175392</td>
+      <td>33.252977</td>
+      <td>0.700241</td>
+      <td>0.756677</td>
+    </tr>
+    <tr>
+      <td>Zook Loop</td>
+      <td>Cheyenne Mountain State Park</td>
+      <td>0.000000</td>
+      <td>50.435056</td>
+      <td>0.021130</td>
+      <td>0.200497</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>Sapinero SWA</td>
+      <td>0.502362</td>
+      <td>40.282246</td>
+      <td>0.577829</td>
+      <td>0.736009</td>
+    </tr>
+    <tr>
+      <td>Horseshoe Trail</td>
+      <td>Hot Sulphur Springs SWA</td>
+      <td>0.817046</td>
+      <td>37.350016</td>
+      <td>0.642358</td>
+      <td>0.726457</td>
+    </tr>
+  </tbody>
+</table>
+
+    <script>
+        $(document).ready(function() {
+            $('#forecast_table').DataTable();
+        });
+    </script>
+</body>
+</html>
